@@ -1,18 +1,20 @@
+$fontFamily: 'Merriweather', 'Georgia', serif;
+
 body,
 html {
   box-sizing: border-box;
-  // min-width: ;
-  // margin: 0;
-  // padding: 0;
+  min-width: 1900px;
+  margin: 0;
+  padding: 0;
 
-  // font-weight: ;
-  // font-size: ;
-  // line-height: ;
-  // font-family: ;
-  // color: ;
-  // text-transform: ;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $fontFamily;
+  color: #3c3c3c;
+  text-transform: none;
 
-  // background-color: ;
+  background-color: #ffffff;
 }
 
 *,
