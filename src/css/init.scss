@@ -1,0 +1,36 @@
+body,
+html {
+  box-sizing: border-box;
+  // min-width: ;
+  // margin: 0;
+  // padding: 0;
+
+  // font-weight: ;
+  // font-size: ;
+  // line-height: ;
+  // font-family: ;
+  // color: ;
+  // text-transform: ;
+
+  // background-color: ;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  text-align: center;
+}
