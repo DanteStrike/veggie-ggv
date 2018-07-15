@@ -1,0 +1,15 @@
+$button-color: #ff0000;
+
+.button {
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+
+  &:focus {
+    color: $button-color;
+  }
+}
