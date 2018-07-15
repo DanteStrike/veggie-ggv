@@ -1,0 +1,36 @@
+.restaurant-menu {
+  min-height: 965px;
+  padding-top: 58px;
+
+  text-align: center;
+
+  &__title {
+    position: relative;
+
+    min-height: 108px;
+    margin-bottom: 52px;
+
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 55px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 253px;
+      height: 33px;
+      margin-left: - (253px / 2);
+
+      background-image: url('../img/decoration.png');
+    }
+  }
+
+  &__nav {
+    margin-left: 490px;
+
+    text-align: left;
+  }
+}
