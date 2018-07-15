@@ -1,0 +1,60 @@
+.about-us {
+  min-height: 967px;
+  padding-top: 238px;
+  padding-left: 13px;
+
+  background: url('../img/about-us-background.jpg') no-repeat #eeefef;
+  background-size: cover;
+
+  &___wrap {
+    position: relative;
+
+    width: 610px;
+    min-height: 564px;
+
+    text-align: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 8px;
+      bottom: 3px;
+
+      width: 213px;
+      height: 144px;
+
+      background-image: url('../img/signature.png');
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    min-height: 108px;
+    margin-bottom: 45px;
+
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 55px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 253px;
+      height: 33px;
+      margin-left: - (253px / 2);
+
+      background-image: url('../img/decoration.png');
+    }
+  }
+
+  &__description {
+    padding-left: 5px;
+
+    font-size: 30px;
+    line-height: 54px;
+  }
+}
