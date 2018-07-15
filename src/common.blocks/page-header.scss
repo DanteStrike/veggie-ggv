@@ -1,0 +1,46 @@
+.page-header {
+  min-height: 965px;
+  padding-top: 53px;
+
+  background: url('../img/header-background.jpg') no-repeat #f8f8f8;
+  background-size: cover;
+
+  &__container {
+    width: 1710px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__nav {
+    float: right;
+    margin: 0 50px 306px 0;
+  }
+
+  &__tagline {
+    position: relative;
+
+    float: right;
+    width: 540px;
+    min-height: 180px;
+    margin-right: 106px;
+
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: -0.8px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 253px;
+      height: 33px;
+      margin-left: - (253px / 2);
+
+      background-image: url('../img/decoration.png');
+    }
+  }
+}
