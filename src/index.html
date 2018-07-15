@@ -9,12 +9,174 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="container page-header__container">
+        <div class="clearfix">
+          <nav class="nav page-header__nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--1">
+                <a class="button nav__link nav__link--current" href="">Home</a>
+              </li>
+              <li class="nav__item nav__item--2">
+                <a class="button nav__link" href="">Specials</a>
+              </li>
+              <li class="nav__item nav__item--3">
+                <a class="button nav__link" href="">About</a>
+              </li>
+              <li class="nav__item nav__item--4">
+                <a class="button nav__link" href="">Menu</a>
+              </li>
+              <li class="nav__item">
+                <a class="button nav__link" href="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="page-header__tagline">Veggies es bonus vobis, proinde vos postulo essum.</p>
+      </div>
     </header>
 
     <main class="page-content">
+        <h1 class="visually-hidden">Ristorante Preview</h1>
+
+        <section class="advantages">
+          <div class="container">
+            <h2 class="visually-hidden">Ristorante Advantages</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--noodle">
+                <h3 class="advantages__title">Turnip greens</h3>
+                <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+              </li>
+              <li class="advantages__item advantages__item--tea">
+                <h3 class="advantages__title">Beetroot water</h3>
+                <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+              </li>
+              <li class="advantages__item advantages__item--sweet">
+                <h3 class="advantages__title">Get social</h3>
+                <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="month-specials">
+          <h2 class="month-specials__offer-title">This month specials</h2>
+          <ul class="month-specials__offers-list">
+            <li class="month-specials__offers-item clearfix">
+              <img class="month-specials__offer-img" src="assets/img/month-specials-offers-1.jpg" alt="Greens fava">
+              <div class="month-specials__offer-wrap">
+                <h3 class="month-specials__offer-title">Greens fava</h3>
+                <p class="month-specials__offer-description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
+                <span class="month-specials__offer-price">17$</span>
+              </div>
+            </li>
+            <li class="month-specials__offers-item clearfix">
+              <img class="month-specials__offer-img" src="assets/img/month-specials-offers-2.jpg" alt="Celery quandong">
+              <div class="month-specials__offer-wrap">
+                <h3 class="month-specials__offer-title">Celery quandong</h3>
+                <p class="month-specials__offer-description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
+                <span class="month-specials__offer-price">30$</span>
+              </div>
+            </li>
+            <li class="month-specials__offers-item clearfix">
+              <img class="month-specials__offer-img" src="assets/img/month-specials-offers-3.jpg" alt="Pea horseradish">
+              <div class="month-specials__offer-wrap">
+                <h3 class="month-specials__offer-title">Pea horseradish</h3>
+                <p class="month-specials__offer-description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
+                <span class="month-specials__offer-price">25$</span>
+              </div>
+            </li>
+            <li class="month-specials__offers-item clearfix">
+              <img class="month-specials__offer-img" src="assets/img/month-specials-offers-4.jpg" alt="Soko radicchio">
+              <div class="month-specials__offer-wrap">
+                <h3 class="month-specials__offer-title">Soko radicchio</h3>
+                <p class="month-specials__offer-description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
+                <span class="month-specials__offer-price">7$</span>
+              </div>
+            </li>
+            <li class="month-specials__offers-item clearfix">
+              <img class="month-specials__offer-img" src="assets/img/month-specials-offers-5.jpg" alt="Tigernut">
+              <div class="month-specials__offer-wrap">
+                <h3 class="month-specials__offer-title">Tigernut</h3>
+                <p class="month-specials__offer-description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
+                <span class="month-specials__offer-price">3$</span>
+              </div>
+            </li>
+            <li class="month-specials__offers-item clearfix">
+              <img class="month-specials__offer-img" src="assets/img/month-specials-offers-6.jpg" alt="Yarrow sweet">
+              <div class="month-specials__offer-wrap">
+                <h3 class="month-specials__offer-title">Yarrow sweet</h3>
+                <p class="month-specials__offer-description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
+                <span class="month-specials__offer-price">5$</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-us">
+          <h2 class="about-us__title">About us</h2>
+          <p class="about-us__decription">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+        </section>
+
+        <section class="restaurant-menu">
+          <h2 class="restaurant-menu__title">Menu</h2>
+          <nav class="nav restaurant-menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <button class="button nav__link nav__link--current">Starters</button>
+              </li>
+              <li class="nav__item">
+                <button class="button nav__link">Main Dishes</button>
+              </li>
+              <li class="nav__item">
+                <button class="button nav__link">Desserts</button>
+              </li>
+              <li class="nav__item">
+                <button class="button nav__link">Drink</button>
+              </li>
+            </ul>
+          </nav>
+          <template class="restaurant-menu__table">
+            <ul class="restaurant-menu__offers-list">
+              <li class="restaurant-menu__offer">
+                <div>
+                  <span class="restaurant-menu__offer-title"></span>
+                  <span class="restaurant-menu__offer-dottet"></span>
+                  <span class="restaurant-menu__offer-price"></span>
+                </div>
+                <p class="restaurant-menu__offer-products"></p>
+              </li>
+            </ul>
+          </template>
+        </section>
     </main>
 
     <footer class="page-footer">
+      <section class="contacs page-footer__contacs">
+        <h2 class="contacs__title">Contact</h2>
+        <div class="contacs__description">
+          <p class="contacs__veggie">
+            <span class="contacs__veggie-title"></span>
+            <span class="contacs__veggie-address"></span>
+          </p>
+          <p class="contacs__reservations">
+            <span class="contacs__reservations-title"></span>
+            <span class="contacs__reservations-email"></span>
+            <span class="contacs__reservations-tel"></span>
+          </p>
+        </div>
+        <form class="contacs__form" method="GET" action="https://echo.htmlacademy.ru">
+          <h3 class="contacs__form-title">Contact form</h3>
+          <div class="contacs__form-colums clearfix">
+            <label for="form-name" class="visually-hidden">Name</label>
+            <input type="text" class="contacs__form-name" id="form-name" name="form-name" placeholder="Name" required>
+            <label for="form-email" class="visually-hidden" name="">Email</label>
+            <input type="email" class="contacs__form-email" id="form-email" name="form-email" placeholder="Email" required>
+          </div>
+          <label for="form-message" class="visually-hidden">Message</label>
+          <input type="text" class="contacs__form-message" id="form-message" name="form-message" placeholder="Message" required>
+          <button class="button contacs__form-button" type="submit">Send</button>
+        </form>
+      </section>
     </footer>
   </body>
 </html>
