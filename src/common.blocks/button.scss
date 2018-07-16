@@ -12,4 +12,9 @@ $button-color: #ff0000;
   &:focus {
     color: $button-color;
   }
+
+  // Remove outiline bug in Firefox
+  &:-moz-focusring {
+    outline: 0;
+  }
 }
