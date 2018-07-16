@@ -139,7 +139,18 @@ $contacts__border-color: #484848;
     font-size: 18px;
     line-height: 48px;
 
-    border: 1px solid #666666;
+    border: 1px solid $contacts__border-color;
+
+    &:hover,
+    &:focus {
+      color: $contacts__color-hover;
+    }
+
+    &:active {
+      color: lighten($contacts__color-hover, 25%);
+
+      border-color: lighten($contacts__border-color, 50%);
+    }
   }
 
   &__social-list {
@@ -166,7 +177,19 @@ $contacts__border-color: #484848;
     width: 50px;
     height: 50px;
 
-    border: 1px solid #666666;
+    border: 1px solid $contacts__border-color;
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($contacts__color-hover, 10%);
+      border-color: lighten($contacts__color-hover, 10%);
+    }
+
+    &:active {
+      background-color: lighten($contacts__color-hover, 35%);
+      border-color: lighten($contacts__color-hover, 35%);
+    }
 
     &--fb {
       background: url('../img/icon-facebook.png') center center no-repeat;
