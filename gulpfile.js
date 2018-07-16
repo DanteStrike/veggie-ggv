@@ -137,7 +137,9 @@ gulp.task('css:public', ['csscomb'], function () {
   return gulp.src(path.src.scssMain) // Выберем наш основной scss
     .pipe(sourcemaps.init())
     .pipe(sass()) // Компилируем
-    .pipe(postcss([ autoprefixer() ])) // Добавить префиксы
+    .pipe(postcss([ autoprefixer({
+      browsers:['ie >= 11', 'last 8 version']
+      }) ])) // Добавить префиксы
     .pipe(cssMin()) // Минификация
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.public.css))
