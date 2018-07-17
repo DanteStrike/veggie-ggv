@@ -37,7 +37,8 @@ const autoprefixer = require('autoprefixer');
 const csscomb = require('gulp-csscomb');
 
 const include = require("gulp-include");
-const jsMin = require('gulp-uglify');
+const babel = require('gulp-babel');
+const jsMin = require('gulp-uglify-es').default;
 
 const imageMin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
@@ -161,6 +162,9 @@ gulp.task('js:public', function () {
   return gulp.src(path.src.jsMain) //Найдем наш main файл
     .pipe(sourcemaps.init())
     .pipe(include())
+    .pipe(babel({
+      presets: ['env']
+      }))
     .pipe(jsMin()) //Сожмем наш js
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.public.js)) //Выплюнем готовый файл в public
