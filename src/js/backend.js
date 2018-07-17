@@ -1,12 +1,15 @@
-'use strict';
-
 (function () {
+  'use strict';
+
   const SERVER_URL = 'http://localhost:9000/offers-menu.json';
 
-  const setup = function (onLoad, onError) {
+  const setup = function (onLoad, onError, method) {
     let xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
 
+    // IE11 FIX (first must open xhr)
+    xhr.open(method, SERVER_URL);
+
+    xhr.responseType = 'json';
     xhr.addEventListener('load', function () {
       switch (xhr.status) {
         case 200:
@@ -37,16 +40,12 @@
   };
 
   const load = function (onLoad, onError) {
-    let xhr = setup(onLoad, onError);
-
-    xhr.open('GET', SERVER_URL);
+    let xhr = setup(onLoad, onError, 'GET');
     xhr.send();
   };
 
   const save = function (data, onLoad, onError) {
-    let xhr = setup(onLoad, onError);
-
-    xhr.open('POST', SERVER_URL);
+    let xhr = setup(onLoad, onError, 'POST');
     xhr.send(data);
   };
 

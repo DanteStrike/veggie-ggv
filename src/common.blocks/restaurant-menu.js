@@ -1,6 +1,6 @@
-'use strict';
-
 (function () {
+  'use strict';
+
   const MAX_IN_ONE = 7;
   const DEFAUL_MARGIN_RIGHT = -1522;
   const RESTAURANT_MENU = document.querySelector('.restaurant-menu');
@@ -27,12 +27,16 @@
 
   //  Коллбек-фция при успешной загрузке
   const onOffersLoad = function (loadedOffers) {
-    console.log(loadedOffers);
+
+    // IE11 FIX
+    if (typeof loadedOffers === 'string') {
+      loadedOffers = JSON.parse(loadedOffers);
+    }
+
     let offers = {};
 
     for (const key in loadedOffers) {
       offers[key] = correctOffersArray(loadedOffers[key]);
-
       if (offers[key].length === 1) {
 
         let newOffersList = window.offersMenu.render(offers[key][0]);
