@@ -64,8 +64,6 @@
     width: (496px / 2);
     height: 248px;
 
-    transition: 0.2s ease;
-
     clip-path: inset(0 0 0 0);
 
     & img {
@@ -128,5 +126,21 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .month-specials {
+    &__offer-img {
+      clip-path: none;
+
+      & img {
+        transition: none;
+
+        &:hover {
+          transform: none;
+        }
+      }
+    }
   }
 }
