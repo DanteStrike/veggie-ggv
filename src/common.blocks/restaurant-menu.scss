@@ -36,8 +36,27 @@
   }
 
   &__offers {
+    width: 6000px;
     padding: 0 15px;
 
+    font-size: 0;
     text-align: left;
+
+    transition: 1s ease-in-out;
+  }
+
+  &__offers-menu {
+    display: inline-block;
+    margin-right: 220px;
+
+    vertical-align: top;
+
+    &:nth-child(2n + 1) {
+      margin-right: 32px;
+    }
+
+    &--solo {
+      margin-right: 887px;
+    }
   }
 }
