@@ -1,6 +1,5 @@
 'use strict';
 
-
 //=require utility.js
 //=require backend.js
 

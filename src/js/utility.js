@@ -1,6 +1,6 @@
-'use strict';
-
 (function () {
+  'use strict';
+
   const LIVE_TIME_ERROR_MESSAGE = 1500;
 
   const onDefaultError = function (errorMessage, messageLifetime, callback) {
