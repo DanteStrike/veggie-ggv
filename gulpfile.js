@@ -5,10 +5,12 @@
 // const cssMin = require('gulp-clean-css'); Css minify
 // const autoPrefixer = require('gulp-autoprefixer');
 // const autoprefixer = require('autoprefixer'); plugin for postCss
-// const postcss = require('gulp-postcss');
+// const postcss = require('gulp-postcss'); Обработка css (автопрефикс и тд)
 // const csscomb = require('gulp-csscomb'); Сортировщик свойств
 // const csscomblint = require('gulp-csscomb-lint');
 // const jsMin = require('gulp-uglify'); Js minify
+// const jsMin = require('gulp-uglify-es').default; Js minify-ES6
+// const babel = require('gulp-babel'); ES6->ES5
 // const imageMin = require('gulp-imagemin'); imgOptimiz
 // const pngquant = require('imagemin-pngquant'); imgOptimiz
 // const rimraf = require('rimraf'); rm -r
@@ -17,7 +19,7 @@
 // const concat = require('gulp-concat'); сцепление файлов в один
 // const importCss = require('gulp-import-css'); Сцепляет все css в один через @import. Работает не только для css
 // const sass = require('gulp-sass'); SASS компилятор
-// const sourcemaps = require('gulp-sourcemaps');
+// const sourcemaps = require('gulp-sourcemaps'); сурсмапы
 // const rigger = require('gulp-rigger'); Соединение через //= file НЕ РАБОТАЕТ В CSS
 // const rename = require('gulp-rename'); Переименовать файл
 // const runSequence = require('run-sequence'); последов. запуск тасков (синх!)
