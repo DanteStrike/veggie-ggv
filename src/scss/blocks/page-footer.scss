@@ -1,0 +1,16 @@
+.page-footer
+{
+    min-height: 965px;
+
+    background: url('../img/footer-background.jpg') no-repeat #ecedee;
+    background-size: cover;
+
+    &__wrap
+    {
+        width: 575px;
+        margin-right: 12px;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}

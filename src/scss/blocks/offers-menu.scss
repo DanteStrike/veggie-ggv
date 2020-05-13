@@ -1,0 +1,87 @@
+.offers-menu
+{
+    width: 635px;
+
+    &__item
+    {
+        position: relative;
+
+        width: inherit;
+        min-height: 60px;
+        margin-bottom: 19px;
+        padding-top: 7px;
+
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+
+        &::before
+        {
+            position: absolute;
+            z-index: 1;
+            top: 26px;
+            left: 2px;
+
+            width: 99%;
+            height: 2px;
+
+            content: '';
+
+            border-bottom: 2px dotted black;
+        }
+    }
+
+    &__wrap
+    {
+        position: relative;
+        z-index: 2;
+
+        float: left;
+
+        background-color: #fff;
+    }
+
+    &__offer
+    {
+        padding-right: 14px;
+    }
+
+    &__offer-title
+    {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+
+        display: block;
+
+        text-transform: uppercase;
+    }
+
+    &__offer-products
+    {
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 14px;
+
+        display: block;
+    }
+
+    &__offer-price
+    {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+
+        position: relative;
+        z-index: 2;
+
+        display: block;
+        float: right;
+
+        padding-left: 9px;
+
+        background-color: #fff;
+    }
+}

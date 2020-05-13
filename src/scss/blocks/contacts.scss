@@ -1,0 +1,242 @@
+$contacts__color-hover: #f00;
+$contacts__border-color: #484848;
+
+.contacts
+{
+    padding-top: 58px;
+    padding-left: 1px;
+
+    &__title
+    {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 55px;
+
+        position: relative;
+
+        min-height: 108px;
+        margin-bottom: 55.5px;
+
+        &::after
+        {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+
+            width: 253px;
+            height: 33px;
+            margin-left: - (253px / 2);
+
+            content: '';
+
+            background-image: url('../img/decoration.png');
+        }
+    }
+
+    &__description
+    {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        margin-bottom: 93px;
+
+        text-align: left;
+    }
+
+    &__veggie
+    {
+        float: left;
+
+        width: 200px;
+    }
+
+    &__veggie-title
+    {
+        font-size: 18px;
+        line-height: 28px;
+
+        display: block;
+
+        margin-bottom: 5px;
+
+        text-transform: uppercase;
+    }
+
+    &__veggie-address
+    {
+        display: block;
+    }
+
+    &__reservations
+    {
+        float: right;
+
+        width: 220px;
+        padding-left: 4px;
+    }
+
+    &__reservations-title
+    {
+        font-size: 18px;
+        line-height: 28px;
+
+        display: block;
+
+        margin-bottom: 5px;
+
+        text-transform: uppercase;
+    }
+
+    &__reservations-email
+    {
+        display: block;
+    }
+
+    &__reservations-tel
+    {
+        display: block;
+    }
+
+    &__form
+    {
+        margin-bottom: 192px;
+
+        text-align: left;
+    }
+
+    &__input
+    {
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 28px;
+
+        min-height: 35px;
+        padding: 0 0 6px 22px;
+
+        vertical-align: top;
+
+        color: #3c3c3c;
+        border-bottom: 1px solid #3c3c3c;
+        outline: 0;
+    }
+
+    &__form-title
+    {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+
+        margin-bottom: 28px;
+
+        text-transform: uppercase;
+    }
+
+    &__form-colums
+    {
+        font-size: 0;
+
+        margin-bottom: 65px;
+    }
+
+    &__form-name
+    {
+        width: 254px;
+        margin-right: 62px;
+    }
+
+    &__form-email
+    {
+        width: 254px;
+    }
+
+    &__form-message
+    {
+        width: 570px;
+        margin-bottom: 52.5px;
+    }
+
+    &__form-button
+    {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 48px;
+
+        width: 100px;
+        height: 50px;
+        margin-left: 237px;
+
+        border: 1px solid $contacts__border-color;
+
+        &:hover,
+        &:focus
+        {
+            color: $contacts__color-hover;
+        }
+
+        &:active
+        {
+            color: lighten($contacts__color-hover, 25%);
+            border-color: lighten($contacts__border-color, 50%);
+        }
+    }
+
+    &__social-list
+    {
+        font-size: 0;
+
+        width: 114px;
+        margin-right: 4px;
+        margin-left: auto;
+    }
+
+    &__social-item
+    {
+        display: inline-block;
+
+        margin-right: 14px;
+
+        vertical-align: top;
+
+        &:last-child
+        {
+            margin-right: 0;
+        }
+    }
+
+    &__social-link
+    {
+        display: block;
+
+        width: 50px;
+        height: 50px;
+
+        border: 1px solid $contacts__border-color;
+        outline: 0;
+
+        &:hover,
+        &:focus
+        {
+            border-color: lighten($contacts__color-hover, 10%);
+            background-color: lighten($contacts__color-hover, 10%);
+        }
+
+        &:active
+        {
+            border-color: lighten($contacts__color-hover, 35%);
+            background-color: lighten($contacts__color-hover, 35%);
+        }
+
+        &--fb
+        {
+            background: url('../img/icon-facebook.png') center center no-repeat;
+        }
+
+        &--inst
+        {
+            background: url('../img/icon-instagram.png') center center no-repeat;
+        }
+    }
+}

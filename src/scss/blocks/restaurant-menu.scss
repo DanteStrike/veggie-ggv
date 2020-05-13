@@ -1,0 +1,61 @@
+.restaurant-menu {
+  min-height: 965px;
+  padding-top: 58px;
+
+  text-align: center;
+
+  &__title {
+    position: relative;
+
+    min-height: 108px;
+    margin-bottom: 52px;
+
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 55px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 253px;
+      height: 33px;
+      margin-left: - (253px / 2);
+
+      background-image: url('../img/decoration.png');
+    }
+  }
+
+  &__nav {
+    margin-bottom: 71px;
+    margin-left: 490px;
+
+    text-align: left;
+  }
+
+  &__offers {
+    padding: 0 15px;
+
+    font-size: 0;
+    text-align: left;
+
+    transition: 1s ease-in-out;
+  }
+
+  &__offers-menu {
+    display: inline-block;
+    margin-right: 220px;
+
+    vertical-align: top;
+
+    &:nth-child(2n + 1) {
+      margin-right: 32px;
+    }
+
+    &--solo {
+      margin-right: 887px;
+    }
+  }
+}

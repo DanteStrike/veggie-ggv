@@ -1,0 +1,10 @@
+.container {
+  width: 1550px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (max-width: $desktopWidth) {
+    width: 100%;
+    padding: 0 1%;
+  }
+}
