@@ -2,5 +2,6 @@
 node_modules/*
 public/*
 build/*
-src/css/_style/*
+.idea/*
+src/css//__css-style/*
 src/scss/__css-style/style.css
