@@ -1,8 +1,9 @@
 .page-header {
-  min-height: 965px;
+  max-height: 965px;
   padding-top: 53px;
 
   background: url('../img/header-background.jpg') no-repeat #f8f8f8;
+  background-position: right bottom;
   background-size: cover;
 
   &__container {
@@ -22,8 +23,8 @@
 
     float: right;
     width: 540px;
-    min-height: 180px;
     margin-right: 103px;
+    margin-bottom: 445px;
 
     font-weight: 300;
     font-size: 40px;
@@ -34,7 +35,7 @@
     &::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: calc(-33px - 36px);
       left: 50%;
 
       width: 253px;
@@ -46,10 +47,48 @@
   }
 
   @media (max-width: $desktopWidth) {
+    padding-top: 3%;
+
     &__container {
       width: 100%;
       margin: 0 auto;
       padding: 0 1%;
+    }
+
+    &__nav {
+      margin-right: 1%;
+      margin-bottom: 18%;
+    }
+
+    &__tagline {
+      margin-right: 2%;
+      margin-bottom: 30%;
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    background: none;
+    background-color: #efeff1;
+
+    &__nav {
+      float: none;
+      margin-right: 0;
+      margin-bottom: 10%;
+      margin-left: 0;
+    }
+
+    &__tagline {
+      float: none;
+      width: auto;
+      margin-right: auto;
+      margin-bottom: 90px;
+      margin-left: auto;
+
+      font-size: 30px;
+      line-height: 40px;
+      &::after {
+        bottom: calc(-33px - 10px);
+      }
     }
   }
 }
