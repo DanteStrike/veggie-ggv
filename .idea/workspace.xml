@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc4861d-2772-4419-a8fa-b4f64d22d88a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/__css-style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/__css-style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/page-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/page-header.scss" afterDir="false" />
@@ -71,7 +70,7 @@
       <workItem from="1589208429160" duration="131000" />
       <workItem from="1589208644415" duration="2892000" />
       <workItem from="1589391482239" duration="8448000" />
-      <workItem from="1589408753021" duration="4252000" />
+      <workItem from="1589408753021" duration="4447000" />
     </task>
     <servers />
   </component>
