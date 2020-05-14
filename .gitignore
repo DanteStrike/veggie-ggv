@@ -6,3 +6,4 @@ src/css//__css-style/*
 src/scss/__css-style/style.css
 *.xml
 *.css
+.idea
