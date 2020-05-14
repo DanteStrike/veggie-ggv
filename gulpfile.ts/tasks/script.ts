@@ -11,15 +11,15 @@ const {paths} = configs;
 
 function buildJS(cb: () => void): void {
   gulp.src(paths.src.jsMain)
-    .pipe(babel({
-      presets: ['env']
-    }))
-    .pipe(jsMin())
+    // .pipe(babel({
+    //   presets: ['env']
+    // }))
+    // .pipe(jsMin())
     .pipe(gulp.dest(paths.build.js));
   cb();
 }
 
 
 export = {
-  buildJS: buildJS
+  buildJS
 }
