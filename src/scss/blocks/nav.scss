@@ -1,55 +1,106 @@
-$nav__link-color-hover: #f00;
+$nav__link-color-hover: #ff0000;
 $nav__link-border-color: #484848;
 
-.nav
-{
-    font-size: 0;
-    &__item
-    {
-        display: inline-block;
+.nav {
+  font-size: 0;
+  &__toggle {
+    display: none;
+  }
 
-        margin-right: 12px;
+  &__item {
+    display: inline-block;
+    margin-right: 12px;
 
-        vertical-align: top;
+    vertical-align: top;
 
-        &:last-child
-        {
-            margin-right: 0;
-        }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    display: block;
+    min-height: 50px;
+    padding: 0 22.35px;
+
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      color: $nav__link-color-hover;
     }
 
-    &__link
-    {
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 50px;
+    &:active {
+      color: lighten($nav__link-color-hover, 25%);
 
-        position: relative;
+      box-shadow: inset 0 0 0 1px lighten($nav__link-border-color, 50%);
+    }
 
+    &--current {
+      box-shadow: inset 0 0 0 1px #484848;
+
+      pointer-events: none;
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    &__toggle {
+      position: relative;
+
+      display: block;
+      width: 100%;
+      min-height: 50px;
+      margin: 0 0 5px 0;
+      padding: 0;
+
+      font-size: 0;
+
+      background: url('../img/header-background.jpg') no-repeat #f8f8f8;
+      background-size: cover;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      &::after {
+        content: '\2261';
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+
+        font-size: 40px;
+      }
+
+      &--toggled {
+        &::after {
+          content: '\00d7';
+        }
+      }
+    }
+
+    &__list {
+      display: none;
+
+      &--toggled {
         display: block;
-
-        min-height: 50px;
-        padding: 0 22.35px;
-
-        text-align: center;
-
-        &:hover,
-        &:focus
-        {
-            color: $nav__link-color-hover;
-        }
-
-        &:active
-        {
-            color: lighten($nav__link-color-hover, 25%);
-            box-shadow: inset 0 0 0 1px lighten($nav__link-border-color, 50%);
-        }
-
-        &--current
-        {
-            pointer-events: none;
-
-            box-shadow: inset 0 0 0 1px #484848;
-        }
+      }
     }
+
+    &__item {
+      display: block;
+      margin-right: 0;
+    }
+
+    &__link {
+      width: 100%;
+      padding: 0 5px;
+    }
+  }
 }
