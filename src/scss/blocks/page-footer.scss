@@ -1,6 +1,6 @@
 .page-footer {
   min-height: 965px;
-
+  padding-bottom: 10px;
   background: url('../img/footer-background.jpg') no-repeat #ecedee;
   background-size: cover;
 }
@@ -11,4 +11,32 @@
   margin-left: auto;
 
   text-align: center;
+}
+
+@media (max-width: $desktopWidth) {
+  .page-footer {
+    background-position: right;
+  }
+
+  .page-footer__wrap {
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .page-footer__wrap {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .page-footer {
+    min-height: auto;
+  }
+
+  .page-footer__wrap {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
