@@ -4,13 +4,12 @@
   "description": "",
   "main": "gulpfile.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "gulp validateHTMLPages & gulp compileTestMainCSS & gulp validateMainCSS",
     "start": "gulp start",
     "build": "gulp build",
     "start-forced": "gulp forcedStart",
     "csscomb": "csscomb ./src/scss",
-    "svg": "gulp generateSVG",
-    "test-main-css": "gulp compileTestMainCSS"
+    "svg": "gulp generateSVG"
   },
   "author": "",
   "license": "ISC",
@@ -31,6 +30,8 @@
     "gulp-sass": "4.1.0",
     "gulp-svg-sprite": "1.5.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-w3c-css": "^2.0.0",
+    "gulp-w3c-html-validator": "^2.0.1",
     "imagemin-pngquant": "8.0.0",
     "normalize.css": "8.0.1",
     "rimraf": "3.0.2",

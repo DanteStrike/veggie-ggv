@@ -29,7 +29,7 @@ function compileTestMainCSS(cb: () => void): void {
       overrideBrowserslist: ['ie >= 11', 'last 2 version']
     })]))
     .pipe(csscomb())
-    .pipe(gulp.dest(`${paths.src.compiledCSS}`));
+    .pipe(gulp.dest(`${paths.src.compiledCSS}/`));
   cb();
 }
 

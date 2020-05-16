@@ -10,6 +10,7 @@ import restMockTasks = require('./tasks/rest-mock');
 import liveServer = require('./tasks/live-server');
 import filesystemTasks = require('./tasks/filesystem');
 import watcher = require('./tasks/watcher');
+import validationTasks = require('./tasks/validation');
 
 
 const {buildHTML} = htmlTasks;
@@ -21,6 +22,7 @@ const {buildRestMocks} = restMockTasks;
 const {startLiveServer} = liveServer;
 const {removeBuildFolder} = filesystemTasks;
 const {turnOnWatcher} = watcher;
+const {validateHTMLPages, validateMainCSS} = validationTasks;
 
 const build = gulp.parallel(buildHTML, buildCSS, buildFonts, buildImg, buildJS, buildRestMocks);
 const start = gulp.series(build, startLiveServer, turnOnWatcher);
@@ -32,3 +34,5 @@ exports.build = build;
 exports.start = start;
 exports.forcedStart = forcedStart;
 exports.compileTestMainCSS = compileTestMainCSS;
+exports.validateHTMLPages = validateHTMLPages;
+exports.validateMainCSS = validateMainCSS;
