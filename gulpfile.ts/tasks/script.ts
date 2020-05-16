@@ -14,7 +14,10 @@ function buildJS(cb: () => void): void {
   gulp.src(paths.src.jsMain)
     .pipe(babel({presets: ['@babel/preset-env']}))
     .pipe(jsMin())
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename({
+      basename: 'script',
+      suffix: '.min'
+    }))
     .pipe(gulp.dest(paths.build.js));
   cb();
 }

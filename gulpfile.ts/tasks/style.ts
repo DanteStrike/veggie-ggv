@@ -16,6 +16,7 @@ const {paths} = configs;
 function buildNormolizCSS(cb: () => void): void {
   gulp.src(paths.src.normolizeCSS)
     .pipe(cssMin())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(paths.build.css));
   cb();
 }
