@@ -6,27 +6,7 @@
 }
 
 .restaurant-menu__title {
-  position: relative;
-
-  min-height: 108px;
   margin-bottom: 52px;
-
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 55px;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-
-    width: 253px;
-    height: 33px;
-    margin-left: - (253px / 2);
-
-    background-image: url('../img/decoration.png');
-  }
 }
 
 .restaurant-menu__nav {
@@ -76,29 +56,5 @@
 
   .restaurant-menu__nav {
     margin-bottom: 20px;
-  }
-
-  .restaurant-menu__title {
-    width: 250px;
-    min-height: 85px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-
-    font-size: 24px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-
-      width: 200px;
-      height: 20px;
-      margin-left: - (200px / 2);
-
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: contain;
-    }
   }
 }

@@ -1,0 +1,50 @@
+.title {
+  position: relative;
+  min-height: 120px;
+  padding-top: 14px;
+  padding-bottom: 40px;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 253px;
+    height: 33px;
+    margin-left: - (253px / 2);
+
+    background-image: url('../img/decoration.png');
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .title {
+    min-height: 85px;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    line-height: 46px;
+
+    font-size: 24px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 200px;
+      height: 20px;
+      margin-left: - (200px / 2);
+
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+    }
+  }
+}
