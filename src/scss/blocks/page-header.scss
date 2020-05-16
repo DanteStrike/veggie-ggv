@@ -48,7 +48,9 @@
 }
 
 @media (max-width: $desktopWidth) {
-  .page-header {padding-top: 3%;}
+  .page-header {
+    padding-top: 3%;
+  }
 
   .page-header__container {
     width: 100%;

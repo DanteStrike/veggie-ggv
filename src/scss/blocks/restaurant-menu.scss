@@ -30,10 +30,7 @@
 }
 
 .restaurant-menu__nav {
-  margin-bottom: 71px;
-  margin-left: 490px;
-
-  text-align: left;
+  margin-bottom: 70px;
 }
 
 .restaurant-menu__offers {
@@ -67,6 +64,41 @@
 
     &--right {
       float: none;
+    }
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .restaurant-menu {
+    padding-top: 14px;
+    padding-bottom: 30px;
+  }
+
+  .restaurant-menu__nav {
+    margin-bottom: 20px;
+  }
+
+  .restaurant-menu__title {
+    width: 250px;
+    min-height: 85px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 200px;
+      height: 20px;
+      margin-left: - (200px / 2);
+
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
     }
   }
 }

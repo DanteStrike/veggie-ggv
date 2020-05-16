@@ -2,6 +2,8 @@ $nav__link-color-hover: #ff0000;
 $nav__link-border-color: #484848;
 
 .nav {
+  padding-bottom: 5px;
+
   font-size: 0;
 }
 .nav__toggle {
@@ -50,6 +52,10 @@ $nav__link-border-color: #484848;
 }
 
 @media (max-width: $tabletWidth) {
+  .nav {
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  }
+
   .nav__toggle {
     position: relative;
 
@@ -88,6 +94,10 @@ $nav__link-border-color: #484848;
     display: none;
 
     &--toggled {
+      display: block;
+    }
+
+    &--restaurant-menu {
       display: block;
     }
   }
