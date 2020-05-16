@@ -5,11 +5,12 @@
   "main": "gulpfile.ts",
   "scripts": {
     "test": "gulp validateHTMLPages & gulp compileTestMainCSS & gulp validateMainCSS",
-    "start": "gulp start",
-    "build": "gulp build",
-    "start-forced": "gulp forcedStart",
-    "csscomb": "csscomb ./src/scss",
-    "svg": "gulp generateSVG"
+    "start": "gulp start --development",
+    "dev": "npm run csscomb & gulp build --development",
+    "build": "npm run csscomb & gulp build --production",
+    "clean": "gulp clean",
+    "server": "gulp server",
+    "csscomb": "csscomb ./src/scss"
   },
   "author": "",
   "license": "ISC",
@@ -35,8 +36,8 @@
     "imagemin-pngquant": "8.0.0",
     "normalize.css": "8.0.1",
     "rimraf": "3.0.2",
-    "run-sequence": "2.2.1",
     "ts-node": "8.10.1",
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "yargs": "15.3.1"
   }
 }

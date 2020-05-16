@@ -13,6 +13,7 @@ import watcher = require('./tasks/watcher');
 import validationTasks = require('./tasks/validation');
 
 
+const isDevelopmentMode = require('./helpers').isDevelopmentMode;
 const {buildHTML} = htmlTasks;
 const {buildCSS, compileTestMainCSS} = styleTasks;
 const {buildFonts} = fontTasks;
@@ -26,13 +27,15 @@ const {validateHTMLPages, validateMainCSS} = validationTasks;
 
 const build = gulp.parallel(buildHTML, buildCSS, buildFonts, buildImg, buildJS, buildRestMocks);
 const start = gulp.series(build, startLiveServer, turnOnWatcher);
-const forcedStart = gulp.series(removeBuildFolder, start);
+
+console.log(`Builder mode: ${isDevelopmentMode ? `Development` : `Production`}`);
 
 
 exports.generateSVG = generateSVG;
 exports.build = build;
 exports.start = start;
-exports.forcedStart = forcedStart;
+exports.clean = removeBuildFolder;
+exports.server = startLiveServer;
 exports.compileTestMainCSS = compileTestMainCSS;
 exports.validateHTMLPages = validateHTMLPages;
 exports.validateMainCSS = validateMainCSS;
