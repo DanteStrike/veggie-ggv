@@ -40,22 +40,33 @@
 
     font-size: 0;
     text-align: left;
-
-    transition: 1s ease-in-out;
   }
 
   &__offers-menu {
-    display: inline-block;
-    margin-right: 220px;
-
-    vertical-align: top;
-
-    &:nth-child(2n + 1) {
-      margin-right: 32px;
+    &--left {
+     float: left;
     }
 
-    &--solo {
-      margin-right: 887px;
+    &--right {
+      float: right;
+    }
+  }
+
+  @media (max-width: $desktopWidth) {
+    &__offers {
+      padding: 0 5%;
+    }
+  }
+
+  @media (max-width: 1500px) {
+    &__offers-menu {
+      &--left {
+        float: none;
+      }
+
+      &--right {
+        float: none;
+      }
     }
   }
 }
