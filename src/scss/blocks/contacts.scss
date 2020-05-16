@@ -193,8 +193,9 @@ $contacts__border-color: #484848;
   }
 
   .contacts__description {
-    text-align: center;
     margin-bottom: 40px;
+
+    text-align: center;
   }
 
   .contacts__veggie {
@@ -203,9 +204,9 @@ $contacts__border-color: #484848;
 
   .contacts__veggie,
   .contacts__reservations {
+    float: none;
     width: 100%;
     padding: 0 5px;
-    float: none;
   }
 
   .contacts__form {
