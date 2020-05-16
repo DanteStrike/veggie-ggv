@@ -3,6 +3,7 @@
 import gulp = require('gulp');
 import rename = require('gulp-rename');
 import configs = require('../configs');
+import plumber = require('gulp-plumber');
 
 
 const babel = require('gulp-babel');
@@ -12,6 +13,7 @@ const {paths} = configs;
 
 function buildJS(cb: () => void): void {
   gulp.src(paths.src.jsMain)
+    .pipe(plumber())
     .pipe(babel({presets: ['@babel/preset-env']}))
     .pipe(jsMin())
     .pipe(rename({

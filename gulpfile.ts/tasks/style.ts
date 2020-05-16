@@ -3,6 +3,7 @@
 import gulp = require('gulp');
 import rename = require('gulp-rename');
 import configs = require('../configs');
+import plumber = require('gulp-plumber');
 
 
 const sass = require('gulp-sass');
@@ -34,6 +35,7 @@ function compileTestMainCSS(cb: () => void): void {
 
 function compileMainCSS(cb: () => void): void {
   gulp.src(paths.src.scssMain)
+    .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([autoprefixer({
       overrideBrowserslist: ['ie >= 11', 'last 2 version']
