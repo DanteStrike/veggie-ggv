@@ -19,11 +19,16 @@ function buildNormolizCSS(cb: () => void): void {
   cb();
 }
 
-// function prettifyAllSCSS(cb: () => void): void {
-//   gulp.src(paths.src.scssAll)
-//     .pipe(csscomb());
-//   cb();
-// }
+function compileTestMainCSS(cb: () => void): void {
+  gulp.src(paths.src.scssMain)
+    .pipe(sass())
+    .pipe(postcss([autoprefixer({
+      overrideBrowserslist: ['ie >= 11', 'last 2 version']
+    })]))
+    .pipe(csscomb())
+    .pipe(gulp.dest(`${paths.src.compiledCSS}`));
+  cb();
+}
 
 function compileMainCSS(cb: () => void): void {
   gulp.src(paths.src.scssMain)
@@ -32,12 +37,6 @@ function compileMainCSS(cb: () => void): void {
       overrideBrowserslist: ['ie >= 11', 'last 2 version']
     })]))
     .pipe(csscomb())
-    .pipe(gulp.dest(`${paths.src.compiledCSS}/`));
-  cb();
-}
-
-function minifyAndCopyMainCSS(cb: () => void): void {
-  gulp.src(`${paths.src.compiledCSS}/style.css`)
     .pipe(cssMin())
     .pipe(gulp.dest(paths.build.css));
   cb();
@@ -45,5 +44,6 @@ function minifyAndCopyMainCSS(cb: () => void): void {
 
 
 export = {
-  buildCSS: gulp.parallel(buildNormolizCSS, gulp.series(compileMainCSS, minifyAndCopyMainCSS)),
+  buildCSS: gulp.parallel(buildNormolizCSS, compileMainCSS),
+  compileTestMainCSS
 }

@@ -33,6 +33,7 @@
 @media (max-width: $desktopWidth) {
   .restaurant-menu__offers {
     padding: 0 5%;
+    margin-bottom: 20px;
   }
 }
 
@@ -55,7 +56,7 @@
   }
 
   .restaurant-menu__nav,
-  .restaurant-menu__title { 
+  .restaurant-menu__title {
     margin-bottom: 20px;
   }
 }

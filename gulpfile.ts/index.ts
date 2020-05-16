@@ -13,7 +13,7 @@ import watcher = require('./tasks/watcher');
 
 
 const {buildHTML} = htmlTasks;
-const {buildCSS} = styleTasks;
+const {buildCSS, compileTestMainCSS} = styleTasks;
 const {buildFonts} = fontTasks;
 const {buildImg, generateSVG} = imgTasks;
 const {buildJS} = jsTasks;
@@ -31,3 +31,4 @@ exports.generateSVG = generateSVG;
 exports.build = build;
 exports.start = start;
 exports.forcedStart = forcedStart;
+exports.compileTestMainCSS = compileTestMainCSS;
