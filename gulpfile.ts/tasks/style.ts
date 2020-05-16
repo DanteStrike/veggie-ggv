@@ -1,6 +1,7 @@
 'use strict';
 
 import gulp = require('gulp');
+import rename = require('gulp-rename');
 import configs = require('../configs');
 
 
@@ -38,6 +39,7 @@ function compileMainCSS(cb: () => void): void {
     })]))
     .pipe(csscomb())
     .pipe(cssMin())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(paths.build.css));
   cb();
 }
