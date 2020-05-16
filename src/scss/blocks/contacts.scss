@@ -1,242 +1,202 @@
-$contacts__color-hover: #f00;
+$contacts__color-hover: #ff0000;
 $contacts__border-color: #484848;
 
-.contacts
-{
-    padding-top: 58px;
-    padding-left: 1px;
+.contacts {
+  padding-top: 58px;
+  padding-left: 1px;
+}
 
-    &__title
-    {
-        font-size: 40px;
-        font-weight: 300;
-        line-height: 55px;
+.contacts__title {
+  position: relative;
 
-        position: relative;
+  min-height: 108px;
+  margin-bottom: 55.5px;
 
-        min-height: 108px;
-        margin-bottom: 55.5px;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
 
-        &::after
-        {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 
-            width: 253px;
-            height: 33px;
-            margin-left: - (253px / 2);
+    width: 253px;
+    height: 33px;
+    margin-left: - (253px / 2);
 
-            content: '';
+    background-image: url('../img/decoration.png');
+  }
+}
 
-            background-image: url('../img/decoration.png');
-        }
-    }
+.contacts__description {
+  margin-bottom: 93px;
 
-    &__description
-    {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
 
-        margin-bottom: 93px;
+.contacts__veggie {
+  float: left;
+  width: 200px;
+}
 
-        text-align: left;
-    }
+.contacts__veggie-title {
+  display: block;
+  margin-bottom: 5px;
 
-    &__veggie
-    {
-        float: left;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
 
-        width: 200px;
-    }
+.contacts__veggie-address {
+  display: block;
+}
 
-    &__veggie-title
-    {
-        font-size: 18px;
-        line-height: 28px;
+.contacts__reservations {
+  float: right;
+  width: 220px;
+  padding-left: 4px;
+}
 
-        display: block;
+.contacts__reservations-title {
+  display: block;
+  margin-bottom: 5px;
 
-        margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
 
-        text-transform: uppercase;
-    }
+.contacts__reservations-email {
+  display: block;
+}
 
-    &__veggie-address
-    {
-        display: block;
-    }
+.contacts__reservations-tel {
+  display: block;
+}
 
-    &__reservations
-    {
-        float: right;
+.contacts__form {
+  margin-bottom: 192px;
 
-        width: 220px;
-        padding-left: 4px;
-    }
+  text-align: left;
+}
 
-    &__reservations-title
-    {
-        font-size: 18px;
-        line-height: 28px;
+.contacts__input {
+  min-height: 35px;
+  padding: 0 0 6px 22px;
 
-        display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: inherit;
+  vertical-align: top;
+  color: #3c3c3c;
+  font-style: italic;
 
-        margin-bottom: 5px;
+  border-bottom: 1px solid #3c3c3c;
+  outline: 0;
+}
 
-        text-transform: uppercase;
-    }
+.contacts__form-title {
+  margin-bottom: 28px;
 
-    &__reservations-email
-    {
-        display: block;
-    }
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
 
-    &__reservations-tel
-    {
-        display: block;
-    }
+.contacts__form-colums {
+  margin-bottom: 65px;
 
-    &__form
-    {
-        margin-bottom: 192px;
+  font-size: 0;
+}
 
-        text-align: left;
-    }
+.contacts__form-name {
+  width: 254px;
+  margin-right: 62px;
+}
 
-    &__input
-    {
-        font-family: inherit;
-        font-size: 18px;
-        font-weight: 400;
-        font-style: italic;
-        line-height: 28px;
+.contacts__form-email {
+  width: 254px;
+}
 
-        min-height: 35px;
-        padding: 0 0 6px 22px;
+.contacts__form-message {
+  width: 570px;
+  margin-bottom: 52.5px;
+}
 
-        vertical-align: top;
+.contacts__form-button {
+  width: 100px;
+  height: 50px;
+  margin-left: 237px;
 
-        color: #3c3c3c;
-        border-bottom: 1px solid #3c3c3c;
-        outline: 0;
-    }
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 48px;
 
-    &__form-title
-    {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 28px;
+  border: 1px solid $contacts__border-color;
 
-        margin-bottom: 28px;
+  &:hover,
+  &:focus {
+    color: $contacts__color-hover;
+  }
 
-        text-transform: uppercase;
-    }
+  &:active {
+    color: lighten($contacts__color-hover, 25%);
 
-    &__form-colums
-    {
-        font-size: 0;
+    border-color: lighten($contacts__border-color, 50%);
+  }
+}
 
-        margin-bottom: 65px;
-    }
+.contacts__social-list {
+  width: 114px;
+  margin-right: 4px;
+  margin-left: auto;
 
-    &__form-name
-    {
-        width: 254px;
-        margin-right: 62px;
-    }
+  font-size: 0;
+}
 
-    &__form-email
-    {
-        width: 254px;
-    }
+.contacts__social-item {
+  display: inline-block;
+  margin-right: 14px;
 
-    &__form-message
-    {
-        width: 570px;
-        margin-bottom: 52.5px;
-    }
+  vertical-align: top;
 
-    &__form-button
-    {
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 48px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
-        width: 100px;
-        height: 50px;
-        margin-left: 237px;
+.contacts__social-link {
+  display: block;
+  width: 50px;
+  height: 50px;
 
-        border: 1px solid $contacts__border-color;
+  border: 1px solid $contacts__border-color;
+  outline: 0;
 
-        &:hover,
-        &:focus
-        {
-            color: $contacts__color-hover;
-        }
+  &:hover,
+  &:focus {
+    background-color: lighten($contacts__color-hover, 10%);
+    border-color: lighten($contacts__color-hover, 10%);
+  }
 
-        &:active
-        {
-            color: lighten($contacts__color-hover, 25%);
-            border-color: lighten($contacts__border-color, 50%);
-        }
-    }
+  &:active {
+    background-color: lighten($contacts__color-hover, 35%);
+    border-color: lighten($contacts__color-hover, 35%);
+  }
 
-    &__social-list
-    {
-        font-size: 0;
+  &--fb {
+    background: url('../img/icon-facebook.png') center center no-repeat;
+  }
 
-        width: 114px;
-        margin-right: 4px;
-        margin-left: auto;
-    }
-
-    &__social-item
-    {
-        display: inline-block;
-
-        margin-right: 14px;
-
-        vertical-align: top;
-
-        &:last-child
-        {
-            margin-right: 0;
-        }
-    }
-
-    &__social-link
-    {
-        display: block;
-
-        width: 50px;
-        height: 50px;
-
-        border: 1px solid $contacts__border-color;
-        outline: 0;
-
-        &:hover,
-        &:focus
-        {
-            border-color: lighten($contacts__color-hover, 10%);
-            background-color: lighten($contacts__color-hover, 10%);
-        }
-
-        &:active
-        {
-            border-color: lighten($contacts__color-hover, 35%);
-            background-color: lighten($contacts__color-hover, 35%);
-        }
-
-        &--fb
-        {
-            background: url('../img/icon-facebook.png') center center no-repeat;
-        }
-
-        &--inst
-        {
-            background: url('../img/icon-instagram.png') center center no-repeat;
-        }
-    }
+  &--inst {
+    background: url('../img/icon-instagram.png') center center no-repeat;
+  }
 }

@@ -3,70 +3,70 @@
   padding-top: 58px;
 
   text-align: center;
+}
 
-  &__title {
-    position: relative;
+.restaurant-menu__title {
+  position: relative;
 
-    min-height: 108px;
-    margin-bottom: 52px;
+  min-height: 108px;
+  margin-bottom: 52px;
 
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 55px;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 
-      width: 253px;
-      height: 33px;
-      margin-left: - (253px / 2);
+    width: 253px;
+    height: 33px;
+    margin-left: - (253px / 2);
 
-      background-image: url('../img/decoration.png');
-    }
+    background-image: url('../img/decoration.png');
+  }
+}
+
+.restaurant-menu__nav {
+  margin-bottom: 71px;
+  margin-left: 490px;
+
+  text-align: left;
+}
+
+.restaurant-menu__offers {
+  padding: 0 15px;
+
+  font-size: 0;
+  text-align: left;
+}
+
+.restaurant-menu__offers-menu {
+  &--left {
+    float: left;
   }
 
-  &__nav {
-    margin-bottom: 71px;
-    margin-left: 490px;
-
-    text-align: left;
+  &--right {
+    float: right;
   }
+}
 
-  &__offers {
-    padding: 0 15px;
-
-    font-size: 0;
-    text-align: left;
+@media (max-width: $desktopWidth) {
+  .restaurant-menu__offers {
+    padding: 0 5%;
   }
+}
 
-  &__offers-menu {
+@media (max-width: 1500px) {
+  .restaurant-menu__offers-menu {
     &--left {
-     float: left;
+      float: none;
     }
 
     &--right {
-      float: right;
-    }
-  }
-
-  @media (max-width: $desktopWidth) {
-    &__offers {
-      padding: 0 5%;
-    }
-  }
-
-  @media (max-width: 1500px) {
-    &__offers-menu {
-      &--left {
-        float: none;
-      }
-
-      &--right {
-        float: none;
-      }
+      float: none;
     }
   }
 }

@@ -1,24 +1,18 @@
-$button-color: #f00;
+.button {
+  margin: 0;
+  padding: 0;
 
-.button
-{
-    margin: 0;
-    padding: 0;
+  background: none;
+  border: none;
+  outline: 0;
+  cursor: pointer;
 
-    cursor: pointer;
+  &:focus {
+    color: #ff0000;
+  }
 
-    border: none;
+  // Remove outiline bug in Firefox
+  &:-moz-focusring {
     outline: 0;
-    background: none;
-
-    &:focus
-    {
-        color: $button-color;
-    }
-
-    // Remove outiline bug in Firefox
-    &:-moz-focusring
-    {
-        outline: 0;
-    }
+  }
 }

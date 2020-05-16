@@ -1,94 +1,94 @@
 .offers-menu {
   width: 635px;
+}
 
-  &__item {
-    position: relative;
+.offers-menuitem {
+  position: relative;
 
-    width: inherit;
-    min-height: 60px;
-    margin-bottom: 19px;
-    padding-top: 7px;
+  width: inherit;
+  min-height: 60px;
+  margin-bottom: 19px;
+  padding-top: 7px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 26px;
-      left: 2px;
-      z-index: 1;
-
-      width: 99%;
-      height: 2px;
-
-      border-bottom: 2px dotted black;
-    }
+  &:last-child {
+    margin-bottom: 0;
   }
 
-  &__wrap {
-    position: relative;
-    z-index: 2;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 2px;
+    z-index: 1;
 
-    float: left;
+    width: 99%;
+    height: 2px;
 
-    background-color: #ffffff;
+    border-bottom: 2px dotted black;
   }
+}
 
-  &__offer {
-    padding-right: 14px;
-  }
+.offers-menuwrap {
+  position: relative;
+  z-index: 2;
 
-  &__offer-title {
-    display: block;
+  float: left;
 
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 28px;
-    text-transform: uppercase;
-  }
+  background-color: #ffffff;
+}
 
-  &__offer-products {
-    display: block;
+.offers-menuoffer {
+  padding-right: 14px;
+}
 
-    font-weight: 300;
+.offers-menuoffer-title {
+  display: block;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.offers-menuoffer-products {
+  display: block;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  font-style: italic;
+}
+
+.offers-menuoffer-price {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+  float: right;
+  padding-left: 9px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+
+  background-color: #ffffff;
+}
+
+@media (max-width: 1500px) {
+  width: 100%;
+  padding: 0 5px;
+}
+
+@media (max-width: $tabletWidth) {
+  .offers-menuoffer-title {
     font-size: 14px;
-    line-height: 14px;
-    font-style: italic;
   }
 
-  &__offer-price {
-    position: relative;
-    z-index: 2;
-
-    display: block;
-    float: right;
-    padding-left: 9px;
-
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 28px;
-
-    background-color: #ffffff;
+  .offers-menuoffer-products {
+    font-size: 12px;
   }
 
-  @media (max-width: 1500px) {
-    width: 100%;
-    padding: 0 5px;
-  }
-
-  @media (max-width: $tabletWidth) {
-    &__offer-title {
-      font-size: 14px;
-    }
-
-    &__offer-products {
-      font-size: 12px;
-    }
-
-    &__offer-price {
-      font-size: 14px;
-    }
+  .offers-menuoffer-price {
+    font-size: 14px;
   }
 }

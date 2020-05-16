@@ -3,104 +3,102 @@ $nav__link-border-color: #484848;
 
 .nav {
   font-size: 0;
-  &__toggle {
-    display: none;
+}
+.nav__toggle {
+  display: none;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-right: 12px;
+
+  vertical-align: top;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  position: relative;
+
+  display: block;
+  min-height: 50px;
+  padding: 0 22.35px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $nav__link-color-hover;
   }
 
-  &__item {
-    display: inline-block;
-    margin-right: 12px;
+  &:active {
+    color: lighten($nav__link-color-hover, 25%);
 
-    vertical-align: top;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    box-shadow: inset 0 0 0 1px lighten($nav__link-border-color, 50%);
   }
 
-  &__link {
+  &--current {
+    box-shadow: inset 0 0 0 1px #484848;
+
+    pointer-events: none;
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .nav__toggle {
     position: relative;
 
     display: block;
+    width: 100%;
     min-height: 50px;
-    padding: 0 22.35px;
+    margin: 0 0 5px 0;
+    padding: 0;
 
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 50px;
-    text-align: center;
+    font-size: 0;
 
-    &:hover,
-    &:focus {
-      color: $nav__link-color-hover;
+    background: url('../img/header-background.jpg') no-repeat #f8f8f8;
+    background-size: cover;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
     }
 
-    &:active {
-      color: lighten($nav__link-color-hover, 25%);
+    &::after {
+      content: '\2261';
+      position: absolute;
+      top: 0;
+      right: 10px;
+      bottom: 0;
 
-      box-shadow: inset 0 0 0 1px lighten($nav__link-border-color, 50%);
+      font-size: 40px;
     }
 
-    &--current {
-      box-shadow: inset 0 0 0 1px #484848;
-
-      pointer-events: none;
+    &--toggled::after {
+      content: '\00d7';
     }
   }
 
-  @media (max-width: $tabletWidth) {
-    &__toggle {
-      position: relative;
+  .nav__list {
+    display: none;
 
+    &--toggled {
       display: block;
-      width: 100%;
-      min-height: 50px;
-      margin: 0 0 5px 0;
-      padding: 0;
-
-      font-size: 0;
-
-      background: url('../img/header-background.jpg') no-repeat #f8f8f8;
-      background-size: cover;
-      cursor: pointer;
-
-      &:hover {
-        opacity: 0.9;
-      }
-
-      &::after {
-        content: '\2261';
-        position: absolute;
-        top: 0;
-        right: 10px;
-        bottom: 0;
-
-        font-size: 40px;
-      }
-
-      &--toggled {
-        &::after {
-          content: '\00d7';
-        }
-      }
     }
+  }
 
-    &__list {
-      display: none;
+  .nav__item {
+    display: block;
+    margin-right: 0;
+  }
 
-      &--toggled {
-        display: block;
-      }
-    }
-
-    &__item {
-      display: block;
-      margin-right: 0;
-    }
-
-    &__link {
-      width: 100%;
-      padding: 0 5px;
-    }
+  .nav__link {
+    width: 100%;
+    padding: 0 5px;
   }
 }

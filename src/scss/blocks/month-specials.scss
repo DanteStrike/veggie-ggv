@@ -4,210 +4,209 @@
   padding-bottom: 40px;
 
   background-color: #ffffff;
+}
 
-  &__title {
-    position: relative;
+.month-specials__title {
+  position: relative;
 
-    width: 410px;
-    min-height: 120px;
-    margin: 0 auto 57px auto;
-    padding-top: 14px;
+  width: 410px;
+  min-height: 120px;
+  margin: 0 auto 57px auto;
+  padding-top: 14px;
 
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 55px;
-    text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 
-      width: 253px;
-      height: 33px;
-      margin-left: - (253px / 2);
+    width: 253px;
+    height: 33px;
+    margin-left: - (253px / 2);
 
-      background-image: url('../img/decoration.png');
+    background-image: url('../img/decoration.png');
+  }
+}
+
+.month-specials__offers-list {
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.month-specials__offers-item {
+  display: inline-block;
+  width: 496px;
+  height: 248px;
+
+  vertical-align: top;
+
+  &--reverse {
+    & .month-specials__offer-img {
+      float: right;
+    }
+
+    & .month-specials__offer-wrap {
+      float: left;
     }
   }
+}
 
-  &__offers-list {
-    font-size: 0;
-    line-height: 0;
-    text-align: center;
-  }
+.month-specials__offer-img {
+  display: block;
+  float: left;
+  width: (496px / 2);
+  height: 248px;
 
-  &__offers-item {
-    display: inline-block;
-    width: 496px;
-    height: 248px;
+  clip-path: inset(0 0 0 0);
 
-    vertical-align: top;
+  & img {
+    transition: 0.2s ease;
 
-    &--reverse {
-      & .month-specials__offer-img {
-        float: right;
-      }
-
-      & .month-specials__offer-wrap {
-        float: left;
-      }
+    &:hover {
+      transform: scale(1.20);
     }
   }
+}
 
-  &__offer-img {
-    display: block;
-    float: left;
-    width: (496px / 2);
-    height: 248px;
+.month-specials__offer-wrap {
+  float: right;
+  width: (496px / 2);
+  height: 248px;
+  padding-top: 62px;
 
-    clip-path: inset(0 0 0 0);
+  text-align: center;
 
-    & img {
-      transition: 0.2s ease;
+  background-color: #f8f8f8;
+}
 
-      &:hover {
-        transform: scale(1.20);
-      }
+.month-specials__offer-title {
+  position: relative;
+
+  min-height: 41px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 88px;
+    height: 2px;
+    margin-left: -44px;
+
+    background-color: #383838;
+  }
+}
+
+.month-specials__offer-description {
+  min-height: 50px;
+  margin-bottom: 7px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.month-specials__offer-price {
+  display: block;
+  min-height: 35px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (max-width: $desktopWidth) {
+  .month-specials__offers-item--reverse {
+    & .month-specials__offer-img {
+      float: left;
+    }
+
+    & .month-specials__offer-wrap {
+      float: right;
     }
   }
+}
 
-  &__offer-wrap {
-    float: right;
-    width: (496px / 2);
-    height: 248px;
-    padding-top: 62px;
-
-    text-align: center;
-
-    background-color: #f8f8f8;
-  }
-
-  &__offer-title {
-    position: relative;
-
-    min-height: 41px;
-    margin-bottom: 12px;
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-
-      width: 88px;
-      height: 2px;
-      margin-left: -44px;
-
-      background-color: #383838;
-    }
-  }
-
-  &__offer-description {
-    min-height: 50px;
-    margin-bottom: 7px;
-
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  &__offer-price {
-    display: block;
-    min-height: 35px;
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  @media (max-width: $desktopWidth) {
-    &__offers-item--reverse {
-      & .month-specials__offer-img {
-        float: left;
-      }
-
-      & .month-specials__offer-wrap {
-        float: right;
-      }
-    }
-  }
-
-  @media (max-width: $tabletWidth) {
+@media (max-width: $tabletWidth) {
+  .month-specials {
     padding-top: 0;
     padding-bottom: 20px;
-
-    &__title {
-      width: 250px;
-      min-height: 85px;
-      margin-bottom: 20px;
-
-      font-size: 24px;
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-
-        width: 200px;
-        height: 20px;
-        margin-left: - (200px / 2);
-
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: contain;
-      }
-    }
   }
 
-  @media (max-width: 520px) {
-    &__offers-item {
-      display: block;
-      width: 100%;
-      height: 248px * 2;
-      padding: 0 5px;
-    }
+  .month-specials__title {
+    width: 250px;
+    min-height: 85px;
+    margin-bottom: 20px;
 
-    &__offer-img {
+    font-size: 24px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 200px;
+      height: 20px;
+      margin-left: - (200px / 2);
+
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .month-specials__offers-item {
+    display: block;
+    width: 100%;
+    height: 248px * 2;
+    padding: 0 5px;
+  }
+
+  .month-specials__offer-img {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .month-specials__offer-wrap {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .month-specials__offers-item--reverse {
+    & .month-specials__offer-img {
       float: none;
       margin: 0 auto;
     }
 
-    &__offer-wrap {
+    & .month-specials__offer-wrap {
       float: none;
       margin: 0 auto;
-    }
-
-    &__offers-item--reverse {
-      & .month-specials__offer-img {
-        float: none;
-        margin: 0 auto;
-      }
-
-      & .month-specials__offer-wrap {
-        float: none;
-        margin: 0 auto;
-      }
     }
   }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .month-specials {
-    &__offer-img {
+    .month-specials__offer-img {
       clip-path: none;
 
-      & img {
+      & img,
+      & img:hover {
         transition: none;
-
-        &:hover {
-          transform: none;
-        }
       }
     }
   }
