@@ -1,0 +1,117 @@
+$nav__link-color-hover: #ff0000;
+$nav__link-border-color: #484848;
+
+.nav {
+  padding-bottom: 5px;
+
+  font-size: 0;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-right: 12px;
+
+  vertical-align: top;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  position: relative;
+
+  display: block;
+  min-height: 50px;
+  padding: 0 22.35px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $nav__link-color-hover;
+  }
+
+  &:active {
+    color: lighten($nav__link-color-hover, 25%);
+
+    box-shadow: inset 0 0 0 1px lighten($nav__link-border-color, 50%);
+  }
+
+  &--current {
+    box-shadow: inset 0 0 0 1px #484848;
+
+    pointer-events: none;
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .nav {
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .nav__toggle {
+    position: relative;
+
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    margin: 0 0 5px 0;
+    padding: 0;
+
+    font-size: 0;
+
+    background: url("../img/header-background.jpg") no-repeat #f8f8f8;
+    background-size: cover;
+    border: 2px solid black;
+    outline: 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &::after {
+      content: "\2261";
+      position: absolute;
+      top: 0;
+      right: 10px;
+      bottom: 0;
+
+      font-size: 40px;
+    }
+
+    &--toggled::after {
+      content: "\00d7";
+    }
+  }
+
+  .nav__list {
+    display: none;
+
+    &--toggled {
+      display: block;
+    }
+
+    &--restaurant-menu {
+      display: block;
+    }
+  }
+
+  .nav__item {
+    display: block;
+    margin-right: 0;
+  }
+
+  .nav__link {
+    width: 100%;
+    padding: 0 5px;
+  }
+}

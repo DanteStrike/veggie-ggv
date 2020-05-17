@@ -1,0 +1,134 @@
+.about-us {
+  padding-top: 238px;
+  padding-bottom: 340px;
+  padding-left: 13px;
+
+  background: url("../img/about-us-background.jpg") no-repeat #eeefef;
+  background-size: cover;
+}
+
+.about-us__wrap {
+  position: relative;
+
+  width: 610px;
+  padding-bottom: 180px;
+
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    bottom: 3px;
+
+    width: 213px;
+    height: 144px;
+
+    background-image: url("../img/signature.png");
+  }
+}
+
+.about-us__title {
+  position: relative;
+
+  min-height: 108px;
+  margin-bottom: 45px;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 253px;
+    height: 33px;
+    margin-left: - (253px / 2);
+
+    background-image: url("../img/decoration.png");
+  }
+}
+
+.about-us__description {
+  padding-left: 5px;
+
+  font-size: 30px;
+  line-height: 54px;
+}
+
+@media (max-width: $desktopWidth) {
+  .about-us {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 0;
+
+    background-position-x: 270px;
+  }
+
+  .about-us__wrap {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .about-us {
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    background-image: none;
+  }
+
+  .about-us__wrap {
+    width: 100%;
+    padding-right: 5px;
+    padding-bottom: 120px;
+    padding-left: 5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 8px;
+      bottom: 3px;
+
+      width: 150px;
+      height: 100px;
+
+      background-size: cover;
+    }
+  }
+
+  .about-us__title {
+    width: 250px;
+    min-height: 85px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 200px;
+      height: 20px;
+      margin-left: - (200px / 2);
+
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+    }
+  }
+
+  .about-us__description {
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  min-width: 100px;
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+
+  &:focus {
+    color: #ff0000;
+  }
+
+  // Remove outiline bug in Firefox
+  &:-moz-focusring {
+    outline: 0;
+  }
+}

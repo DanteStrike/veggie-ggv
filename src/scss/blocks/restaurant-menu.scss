@@ -1,0 +1,62 @@
+.restaurant-menu {
+  padding-top: 58px;
+  padding-bottom: 75px;
+
+  text-align: center;
+}
+
+.restaurant-menu__title {
+  margin-bottom: 52px;
+}
+
+.restaurant-menu__nav {
+  margin-bottom: 70px;
+}
+
+.restaurant-menu__offers {
+  padding: 0 15px;
+
+  font-size: 0;
+  text-align: left;
+}
+
+.restaurant-menu__offers-menu {
+  &--left {
+    float: left;
+  }
+
+  &--right {
+    float: right;
+  }
+}
+
+@media (max-width: $desktopWidth) {
+  .restaurant-menu__offers {
+    margin-bottom: 20px;
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .restaurant-menu__offers-menu {
+    &--left {
+      float: none;
+    }
+
+    &--right {
+      float: none;
+    }
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .restaurant-menu {
+    padding-top: 14px;
+    padding-bottom: 30px;
+  }
+
+  .restaurant-menu__nav,
+  .restaurant-menu__title {
+    margin-bottom: 20px;
+  }
+}

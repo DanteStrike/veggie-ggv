@@ -1,0 +1,233 @@
+$contacts__color-hover: #ff0000;
+$contacts__border-color: #484848;
+
+.contacts {
+  padding-top: 58px;
+  padding-left: 1px;
+}
+
+.contacts__title {
+  margin-bottom: 55px;
+}
+
+.contacts__description {
+  margin-bottom: 93px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.contacts__veggie {
+  float: left;
+  width: 200px;
+}
+
+.contacts__veggie-title {
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.contacts__veggie-address {
+  display: block;
+}
+
+.contacts__reservations {
+  float: right;
+  width: 220px;
+  padding-left: 4px;
+}
+
+.contacts__reservations-title {
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.contacts__reservations-email {
+  display: block;
+}
+
+.contacts__reservations-tel {
+  display: block;
+}
+
+.contacts__form {
+  margin-bottom: 192px;
+
+  text-align: left;
+}
+
+.contacts__input {
+  min-height: 35px;
+  padding: 0 0 6px 22px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: inherit;
+  vertical-align: top;
+  color: #3c3c3c;
+  font-style: italic;
+
+  border-bottom: 1px solid #3c3c3c;
+  outline: 0;
+}
+
+.contacts__form-title {
+  margin-bottom: 28px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.contacts__form-colums {
+  margin-bottom: 65px;
+
+  font-size: 0;
+}
+
+.contacts__form-name {
+  width: 254px;
+  margin-right: 62px;
+}
+
+.contacts__form-email {
+  width: 254px;
+}
+
+.contacts__form-message {
+  width: 570px;
+  margin-bottom: 52.5px;
+}
+
+.contacts__form-button {
+  margin-left: 237px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 48px;
+
+  border: 1px solid $contacts__border-color;
+
+  &:hover,
+  &:focus {
+    color: $contacts__color-hover;
+  }
+
+  &:active {
+    color: lighten($contacts__color-hover, 25%);
+
+    border-color: lighten($contacts__border-color, 50%);
+  }
+}
+
+.contacts__social-list {
+  width: 114px;
+  margin-right: 4px;
+  margin-left: auto;
+
+  font-size: 0;
+}
+
+.contacts__social-item {
+  display: inline-block;
+  margin-right: 14px;
+
+  vertical-align: top;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contacts__social-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid $contacts__border-color;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($contacts__color-hover, 10%);
+    border-color: lighten($contacts__color-hover, 10%);
+  }
+
+  &:active {
+    background-color: lighten($contacts__color-hover, 35%);
+    border-color: lighten($contacts__color-hover, 35%);
+  }
+
+  &--fb {
+    background: url("../img/icon-facebook.png") center center no-repeat;
+  }
+
+  &--inst {
+    background: url("../img/icon-instagram.png") center center no-repeat;
+  }
+}
+
+@media (max-width: $tabletWidth) {
+  .contacts {
+    padding-top: 14px;
+    padding-left: 0;
+  }
+
+  .contacts__title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .contacts__description {
+    margin-bottom: 40px;
+
+    text-align: center;
+  }
+
+  .contacts__veggie {
+    margin-bottom: 30px;
+  }
+
+  .contacts__veggie,
+  .contacts__reservations {
+    float: none;
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .contacts__form {
+    margin-bottom: 40px;
+  }
+
+  .contacts__form-colums,
+  .contacts__form-name,
+  .contacts__form-message {
+    margin-bottom: 30px;
+  }
+
+  .contacts__form-name {
+    margin-right: 0;
+  }
+
+  .contacts__form-name,
+  .contacts__form-email,
+  .contacts__form-message {
+    width: 100%;
+  }
+
+  .contacts__form-button {
+    margin: 0 auto;
+  }
+}
