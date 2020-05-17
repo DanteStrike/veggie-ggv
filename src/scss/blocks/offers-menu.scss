@@ -31,7 +31,7 @@
 .offers-menu__wrap {
   position: relative;
   z-index: 2;
-
+  max-width: 90%;
   float: left;
 
   background-color: #ffffff;
@@ -88,6 +88,10 @@
     &::before {
       content: none;
     }
+  }
+
+  .offers-menu__wrap {
+    max-width: none;
   }
 
   .offers-menu__offer-title {
