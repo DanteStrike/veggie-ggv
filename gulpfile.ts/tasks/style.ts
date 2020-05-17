@@ -6,6 +6,8 @@ import configs = require('../configs');
 import plumber = require('gulp-plumber');
 
 
+const isDevelopmentMode = require('../helpers').isDevelopmentMode;
+
 const sass = require('gulp-sass');
 const cssMin = require('gulp-clean-css');
 const postcss = require('gulp-postcss');
@@ -34,7 +36,7 @@ function compileTestMainCSS(cb: () => void): void {
 }
 
 function compileMainCSS(cb: () => void): void {
-  gulp.src(paths.src.scssMain)
+  gulp.src(paths.src.scssMain, {sourcemaps: isDevelopmentMode})
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([autoprefixer({
@@ -43,7 +45,7 @@ function compileMainCSS(cb: () => void): void {
     .pipe(csscomb())
     .pipe(cssMin())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(paths.build.css));
+    .pipe(gulp.dest(paths.build.css, {sourcemaps: isDevelopmentMode}));
   cb();
 }
 

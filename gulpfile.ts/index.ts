@@ -14,6 +14,7 @@ import validationTasks = require('./tasks/validation');
 
 
 const isDevelopmentMode = require('./helpers').isDevelopmentMode;
+
 const {buildHTML} = htmlTasks;
 const {buildCSS, compileTestMainCSS} = styleTasks;
 const {buildFonts} = fontTasks;
