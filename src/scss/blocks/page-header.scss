@@ -1,5 +1,4 @@
 .page-header {
-  max-height: 965px;
   padding-top: 53px;
 
   background: url('../img/header-background.jpg') no-repeat #f8f8f8;
@@ -22,10 +21,10 @@
 .page-header__tagline {
   position: relative;
 
-  float: right;
   width: 540px;
   margin-right: 103px;
   margin-bottom: 445px;
+  margin-left: auto;
 
   font-weight: 300;
   font-size: 40px;
