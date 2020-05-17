@@ -3,7 +3,7 @@
   padding-bottom: 340px;
   padding-left: 13px;
 
-  background: url('../img/about-us-background.jpg') no-repeat #eeefef;
+  background: url("../img/about-us-background.jpg") no-repeat #eeefef;
   background-size: cover;
 }
 
@@ -16,7 +16,7 @@
   text-align: center;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 8px;
     bottom: 3px;
@@ -24,7 +24,7 @@
     width: 213px;
     height: 144px;
 
-    background-image: url('../img/signature.png');
+    background-image: url("../img/signature.png");
   }
 }
 
@@ -39,7 +39,7 @@
   line-height: 55px;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -48,7 +48,7 @@
     height: 33px;
     margin-left: - (253px / 2);
 
-    background-image: url('../img/decoration.png');
+    background-image: url("../img/decoration.png");
   }
 }
 
@@ -88,7 +88,7 @@
     padding-left: 5px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 8px;
       bottom: 3px;
@@ -109,7 +109,7 @@
     font-size: 24px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 50%;

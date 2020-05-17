@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.ts",
   "scripts": {
-    "test": "gulp validateHTMLPages & gulp compileTestMainCSS & gulp validateMainCSS",
+    "test": "gulp validateHTMLPages & gulp compileTestMainCSS & gulp validateMainCSS & npx stylelint \"**/*.scss\"",
+    "stylelint": "npx stylelint \"**/*.scss\"",
     "start": "gulp start --development",
     "dev": "npm run csscomb & gulp build --development",
     "build": "npm run csscomb & gulp build --production",
@@ -36,6 +37,8 @@
     "imagemin-pngquant": "8.0.0",
     "normalize.css": "8.0.1",
     "rimraf": "3.0.2",
+    "stylelint": "13.4.0",
+    "stylelint-config-htmlacademy": "0.1.4",
     "ts-node": "8.10.1",
     "typescript": "3.8.3",
     "yargs": "15.3.1"

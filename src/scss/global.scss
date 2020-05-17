@@ -71,50 +71,50 @@ input {
 
 @font-face {
   font-weight: 300;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: normal;
   font-stretch: normal;
 
-  src: url('../font/Merriweather-Light.otf') format('opentype');
+  src: url("../font/Merriweather-Light.otf") format("opentype");
   unicode-range: U+0020-00FE;
 }
 
 @font-face {
   font-weight: 300;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   font-stretch: normal;
 
-  src: url('../font/Merriweather-Light-Italic.otf') format('opentype');
+  src: url("../font/Merriweather-Light-Italic.otf") format("opentype");
   unicode-range: U+0020-00FE;
 }
 
 @font-face {
   font-weight: 400;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: normal;
   font-stretch: normal;
 
-  src: url('../font/Merriweather-Regular.otf') format('opentype');
+  src: url("../font/Merriweather-Regular.otf") format("opentype");
   unicode-range: U+0020-00FE;
 }
 
 @font-face {
   font-weight: 700;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: normal;
   font-stretch: normal;
 
-  src: url('../font/Merriweather-Bold.otf') format('opentype');
+  src: url("../font/Merriweather-Bold.otf") format("opentype");
   unicode-range: U+0020-00FE;
 }
 
 @font-face {
   font-weight: 900;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: normal;
   font-stretch: normal;
 
-  src: url('../font/Merriweather-Black.otf') format('opentype');
+  src: url("../font/Merriweather-Black.otf") format("opentype");
   unicode-range: U+0020-00FE;
 }

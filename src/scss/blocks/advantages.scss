@@ -2,7 +2,7 @@
   padding-top: 66px;
   padding-bottom: 77px;
 
-  background: url('../img/advantages-background.jpg') no-repeat #f9c710;
+  background: url("../img/advantages-background.jpg") no-repeat #f9c710;
   background-size: cover;
 }
 
@@ -29,7 +29,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 11px;
     left: 50%;
@@ -40,7 +40,7 @@
     height: 79px;
     margin-left: - (87px / 2) + 10px;
 
-    background-image: url('../img/noodle.png');
+    background-image: url("../img/noodle.png");
   }
 
   &--tea::before {
@@ -48,7 +48,7 @@
     height: 68px;
     margin-left: - (106px / 2) + 2px;
 
-    background-image: url('../img/tea.png');
+    background-image: url("../img/tea.png");
   }
 
   &--sweet::before {
@@ -56,7 +56,7 @@
     height: 76px;
     margin-left: - (64px / 2) + 1px;
 
-    background-image: url('../img/sweet.png');
+    background-image: url("../img/sweet.png");
   }
 }
 
@@ -99,7 +99,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -10px;
       left: 0;
@@ -108,7 +108,7 @@
       height: 20px;
       padding: 0 5px;
 
-      background-image: url('../img/decoration.png');
+      background-image: url("../img/decoration.png");
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: contain;

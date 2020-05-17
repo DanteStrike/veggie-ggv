@@ -1,3 +1,8 @@
+$monthSpecialImgWidth: 248px;
+$monthSpecialDescriptionWidth: 248px;
+$monthSpecialWidth: $monthSpecialImgWidth + $monthSpecialDescriptionWidth;
+$monthSpecialHeight: 248px;
+
 .month-specials {
   min-height: 835px;
   padding-top: 58px;
@@ -11,49 +16,66 @@
 }
 
 .month-specials__offers-list {
+  width: $monthSpecialWidth * 3;
+  margin: 0 auto;
+
   font-size: 0;
   line-height: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .month-specials__offers-item {
   display: inline-block;
-  width: 496px;
+  width: $monthSpecialWidth;
 
   vertical-align: top;
+}
 
-  &--reverse {
-    & .month-specials__offer-img {
-      float: right;
-    }
+.month-specials__offers-item:nth-child(6n + 1),
+.month-specials__offers-item:nth-child(6n + 2),
+.month-specials__offers-item:nth-child(6n + 3) {
+  & .month-specials__offer-img {
+    float: left;
+  }
 
-    & .month-specials__offer-wrap {
-      float: left;
-    }
+  & .month-specials__offer-wrap {
+    float: right;
+  }
+}
+
+.month-specials__offers-item:nth-child(6n + 4),
+.month-specials__offers-item:nth-child(6n + 5),
+.month-specials__offers-item:nth-child(6n + 6) {
+  & .month-specials__offer-img {
+    float: right;
+  }
+
+  & .month-specials__offer-wrap {
+    float: left;
   }
 }
 
 .month-specials__offer-img {
   display: block;
   float: left;
-  width: (496px / 2);
-  min-height: 248px;
+  width: $monthSpecialImgWidth;
+  min-height: $monthSpecialHeight;
 
   clip-path: inset(0 0 0 0);
 
   & img {
-    transition: 0.2s ease;
+    transition: scale 0.2s ease;
 
     &:hover {
-      transform: scale(1.20);
+      transform: scale(1.2);
     }
   }
 }
 
 .month-specials__offer-wrap {
   float: right;
-  width: (496px / 2);
-  min-height: 248px;
+  width: $monthSpecialDescriptionWidth;
+  min-height: $monthSpecialHeight;
   padding-top: 62px;
 
   text-align: center;
@@ -72,7 +94,7 @@
   line-height: 30px;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -103,14 +125,56 @@
   line-height: 30px;
 }
 
-@media (max-width: $desktopWidth) {
-  .month-specials__offers-item--reverse {
+@media (max-width: 1520px) {
+  .month-specials__offers-list {
+    width: $monthSpecialWidth * 2;
+  }
+
+  .month-specials__offers-item:nth-child(4n + 1),
+  .month-specials__offers-item:nth-child(4n + 2) {
     & .month-specials__offer-img {
       float: left;
     }
 
     & .month-specials__offer-wrap {
       float: right;
+    }
+  }
+
+  .month-specials__offers-item:nth-child(4n + 3),
+  .month-specials__offers-item:nth-child(4n + 4) {
+    & .month-specials__offer-img {
+      float: right;
+    }
+
+    & .month-specials__offer-wrap {
+      float: left;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .month-specials__offers-list {
+    width: $monthSpecialWidth;
+  }
+
+  .month-specials__offers-item:nth-child(2n + 1) {
+    & .month-specials__offer-img {
+      float: left;
+    }
+
+    & .month-specials__offer-wrap {
+      float: right;
+    }
+  }
+
+  .month-specials__offers-item:nth-child(2n) {
+    & .month-specials__offer-img {
+      float: right;
+    }
+
+    & .month-specials__offer-wrap {
+      float: left;
     }
   }
 }
@@ -130,7 +194,7 @@
   .month-specials__offers-item {
     display: block;
     width: 100%;
-    min-height: 248px * 2;
+    min-height: $monthSpecialHeight * 2;
     padding: 0 5px;
   }
 
@@ -154,6 +218,12 @@
       float: none;
       margin: 0 auto;
     }
+  }
+}
+
+@media (max-width: 520px) {
+  .month-specials__offers-list {
+    width: $monthSpecialWidth / 2;
   }
 }
 

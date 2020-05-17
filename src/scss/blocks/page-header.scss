@@ -1,7 +1,7 @@
 .page-header {
   padding-top: 53px;
 
-  background: url('../img/header-background.jpg') no-repeat #f8f8f8;
+  background: url("../img/header-background.jpg") no-repeat #f8f8f8;
   background-position: right bottom;
   background-size: cover;
 }
@@ -33,7 +33,7 @@
   letter-spacing: -0.8px;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: calc(-33px - 36px);
     left: 50%;
@@ -42,7 +42,7 @@
     height: 33px;
     margin-left: - (253px / 2);
 
-    background-image: url('../img/decoration.png');
+    background-image: url("../img/decoration.png");
   }
 }
 
@@ -97,6 +97,7 @@
 
     font-size: 24px;
     line-height: 36px;
+
     &::after {
       bottom: calc(-33px - 10px);
     }
