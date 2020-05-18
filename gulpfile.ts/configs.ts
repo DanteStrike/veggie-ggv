@@ -9,8 +9,8 @@ interface Paths {
     base: string;
     normolizeCSS: string;
     htmlPages: string;
-    font?: string;
-    img?: string;
+    font: string;
+    img: string;
     scssMain: string;
     scssAll: string;
     compiledCSS: string;
@@ -29,7 +29,7 @@ interface Paths {
     img: string;
     css: string;
     js: string;
-    restMocks?: string;
+    restMocks: string;
   },
 }
 const paths: Paths = {

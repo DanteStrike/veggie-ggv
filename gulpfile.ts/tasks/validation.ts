@@ -1,4 +1,6 @@
+// @ts-ignore
 import htmlValidator = require('gulp-w3c-html-validator');
+// @ts-ignore
 import cssValidator = require('gulp-w3c-css');
 import gulp = require('gulp');
 import configs = require('../configs');
