@@ -40,3 +40,4 @@ exports.server = startLiveServer;
 exports.compileTestMainCSS = compileTestMainCSS;
 exports.validateHTMLPages = validateHTMLPages;
 exports.validateMainCSS = validateMainCSS;
+exports.buildJS = buildJS;

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "module": "commonjs",
+    "pretty": true
+  },
+  "include": [
+    "./**/*"
+  ]
+}

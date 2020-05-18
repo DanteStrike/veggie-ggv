@@ -7,17 +7,33 @@ import plumber = require('gulp-plumber');
 
 
 const isDevelopmentMode = require('../helpers').isDevelopmentMode;
+const ts = require('gulp-typescript');
+const tsProject = ts.createProject('tsconfig.json');
 
 const babel = require('gulp-babel');
 const jsMin = require('gulp-uglify');
 
 const {paths} = configs;
 
+// function buildJS(cb: () => void): void {
+//   gulp.src(paths.src.jsMain, {sourcemaps: isDevelopmentMode})
+//     .pipe(plumber())
+//     .pipe(babel({presets: ['@babel/preset-env']}))
+//     .pipe(jsMin())
+//     .pipe(rename({
+//       basename: 'script',
+//       suffix: '.min'
+//     }))
+//     .pipe(gulp.dest(paths.build.js, {sourcemaps: isDevelopmentMode}));
+//   cb();
+// }
+
 function buildJS(cb: () => void): void {
-  gulp.src(paths.src.jsMain, {sourcemaps: isDevelopmentMode})
+  gulp.src('./src/js/main.ts', {sourcemaps: isDevelopmentMode})
     .pipe(plumber())
-    .pipe(babel({presets: ['@babel/preset-env']}))
-    .pipe(jsMin())
+    .pipe(tsProject())
+    // .pipe(babel({presets: ['@babel/preset-env']}))
+    // .pipe(jsMin())
     .pipe(rename({
       basename: 'script',
       suffix: '.min'
