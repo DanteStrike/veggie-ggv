@@ -1,17 +1,10 @@
 {
   "compilerOptions": {
-    "strict": false,
-    "module": "es6",
-    "target": "es6",
-    "sourceMap": true,
+    "strict": true,
     "pretty": true
-//    "outFile": "./build/assets/js/bundle.js"
   },
-  "include": [
-    "./src/js/**/*"
-  ],
   "exclude": [
     "node_modules",
-    "gulpfile.ts"
+    "build"
   ]
 }

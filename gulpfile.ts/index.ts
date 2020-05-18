@@ -31,7 +31,6 @@ const start = gulp.series(build, startLiveServer, turnOnWatcher);
 
 console.log(`Builder mode: ${isDevelopmentMode ? `Development` : `Production`}`);
 
-
 exports.generateSVG = generateSVG;
 exports.build = build;
 exports.start = start;
