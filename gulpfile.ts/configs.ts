@@ -16,6 +16,7 @@ interface Paths {
     compiledCSS: string;
     jsMain: string;
     jsAll: string;
+    frontEndTSConfig: string;
     restMocks: string;
     svgIcons: string;
     svgSprite: string;
@@ -42,9 +43,10 @@ const paths: Paths = {
     scssMain: `${srcBaseDir}/scss/style.scss`,
     scssAll: `${srcBaseDir}/scss/**/*.scss`,
     compiledCSS: `${srcBaseDir}/scss/__css-style`,
-    jsMain: `${srcBaseDir}/js/main.js`,
-    jsAll: `${srcBaseDir}/js/**/*.js`,
-    restMocks: `${srcBaseDir}/js/rest-mock/*.json`,
+    jsMain: `${srcBaseDir}/frontend/main.ts`,
+    jsAll: `${srcBaseDir}/frontend/**/*.ts`,
+    frontEndTSConfig: `${srcBaseDir}/frontend/tsconfig.frontend.json`,
+    restMocks: `${srcBaseDir}/frontend/rest-mock/*.json`,
     svgSprite: `${srcBaseDir}/sprite`,
     svgIcons: `${srcBaseDir}/sprite/svg-icons/*.svg`,
     createdSprite: `${srcBaseDir}/sprite/sprite.svg`
@@ -56,8 +58,8 @@ const paths: Paths = {
     font: `${buildAssetsDir}/font/`,
     img: `${buildAssetsDir}/img/`,
     css: `${buildAssetsDir}/css/`,
-    js: `${buildAssetsDir}/js/`,
-    restMocks: `${buildAssetsDir}/js/rest-mock`
+    js: `${buildAssetsDir}/frontend/`,
+    restMocks: `${buildAssetsDir}/js/rest-mock/`
   },
 };
 
@@ -69,6 +71,7 @@ interface LiveServerConfig {
   host?: string;
   port?: number;
   logPrefix?: string;
+  reloadDelay: number;
 }
 const liveServerConfig: LiveServerConfig = {
   server: {
@@ -77,7 +80,8 @@ const liveServerConfig: LiveServerConfig = {
   tunnel: false,
   host: `localhost`,
   port: 9090,
-  logPrefix: `Frontend_DevilDante`
+  logPrefix: `Frontend_DevilDante`,
+  reloadDelay: 100
 };
 
 interface SvgSpriteConfig {

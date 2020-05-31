@@ -1,44 +1,43 @@
 'use strict';
 
 import gulp = require('gulp');
-import rename = require('gulp-rename');
 import configs = require('../configs');
-import plumber = require('gulp-plumber');
-
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
+const tsify = require('tsify');
+const sourcemaps = require('gulp-sourcemaps');
+const buffer = require('vinyl-buffer');
 
 const isDevelopmentMode = require('../helpers').isDevelopmentMode;
-const ts = require('gulp-typescript');
-const tsProject = ts.createProject('src/js/tsconfig.frontend.json');
 
-const babel = require('gulp-babel');
-const jsMin = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 
 const {paths} = configs;
 
-// function buildJS(cb: () => void): void {
-//   gulp.src(paths.src.jsMain, {sourcemaps: isDevelopmentMode})
-//     .pipe(plumber())
-//     .pipe(babel({presets: ['@babel/preset-env']}))
-//     .pipe(jsMin())
-//     .pipe(rename({
-//       basename: 'script',
-//       suffix: '.min'
-//     }))
-//     .pipe(gulp.dest(paths.build.js, {sourcemaps: isDevelopmentMode}));
-//   cb();
-// }
 
 function buildJS(cb: () => void): void {
-  gulp.src('./src/js/main.ts', {sourcemaps: isDevelopmentMode})
-    // .pipe(plumber())
-    .pipe(tsProject())
-    // // .pipe(babel({presets: ['@babel/preset-env']}))
-    // // .pipe(jsMin())
-    // .pipe(rename({
-    //   basename: 'script',
-    //   suffix: '.min'
-    // }))
-    .pipe(gulp.dest(paths.build.js, {sourcemaps: isDevelopmentMode}));
+  browserify({
+    basedir: '.',
+    debug: isDevelopmentMode,
+    entries: [paths.src.jsMain],
+    cache: {},
+    packageCache: {}
+  })
+  .plugin(tsify, {
+    project: paths.src.frontEndTSConfig
+  })
+  .transform('babelify', {
+    presets: ['@babel/preset-env'],
+    extensions: ['.ts']
+  })
+  .bundle()
+  .on('error', console.error.bind(console))
+  .pipe(source('bundle.js'))
+  .pipe(buffer())
+  .pipe(sourcemaps.init({loadMaps: true}))
+  .pipe(uglify())
+  .pipe(sourcemaps.write('./'))
+  .pipe(gulp.dest(paths.build.js, {sourcemaps: isDevelopmentMode}));
   cb();
 }
 

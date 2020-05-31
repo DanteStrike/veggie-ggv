@@ -8,5 +8,5 @@
   "include": [
     "./**/*"
   ],
-  "exclude": []
+  "exclude": ["./src/frontend/**/*.test.ts"]
 }

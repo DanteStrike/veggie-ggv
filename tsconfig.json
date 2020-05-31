@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "strict": true,
-    "pretty": true
+    "pretty": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "exclude": [
     "node_modules",
