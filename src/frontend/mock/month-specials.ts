@@ -1,4 +1,4 @@
-import {getRandomNum} from "../utils/utils";
+import {getRandomNum} from "../utils";
 
 
 type Currency = '$' | '₽';
