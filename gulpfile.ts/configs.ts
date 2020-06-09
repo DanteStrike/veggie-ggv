@@ -4,7 +4,7 @@ const buildBaseDir: string = `./build`;
 const buildAssetsDir: string = `${buildBaseDir}/assets`;
 const srcBaseDir: string = `./src`;
 
-interface Paths {
+type Paths = {
   src: {
     base: string;
     normolizeCSS: string;
@@ -63,7 +63,7 @@ const paths: Paths = {
   },
 };
 
-interface LiveServerConfig {
+type LiveServerConfig = {
   server: {
     baseDir: string;
   },
@@ -84,7 +84,7 @@ const liveServerConfig: LiveServerConfig = {
   reloadDelay: 100
 };
 
-interface SvgSpriteConfig {
+type SvgSpriteConfig = {
   mode: {
     css: {
       dest: string;
