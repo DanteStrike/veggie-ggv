@@ -1,7 +1,6 @@
 const enum Position {
   AFTERBEGIN = `afterbegin`,
-  BEFOREEND = `beforeend`,
-  AFTEREND = `afterend`
+  BEFOREEND = `beforeend`
 }
 
 export {Position}
