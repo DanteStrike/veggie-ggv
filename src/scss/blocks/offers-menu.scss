@@ -91,6 +91,7 @@
   }
 
   .offers-menu__wrap {
+    float: none;
     max-width: none;
   }
 
@@ -105,9 +106,5 @@
   .offers-menu__offer-price {
     float: none;
     font-size: 16px;
-  }
-
-  .offers-menu__wrap {
-    float: none;
   }
 }
