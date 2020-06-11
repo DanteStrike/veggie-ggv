@@ -1,1 +1,2 @@
-export {getRandomNum} from "./random/random";
+export * from "./random/random";
+export * from "./dom/dom";

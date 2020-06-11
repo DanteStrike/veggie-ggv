@@ -1,11 +1,11 @@
-import {render, unmount} from "./dom";
+import {createElement, render, unmount} from "./dom";
 import {Position} from "../../enum";
 
 
 describe(`Utils dom should work correctly`, () => {
   describe(`Render should work correctly`, () => {
-    let containerMock: HTMLElement;
-    let elementMock: HTMLElement;
+    let containerMock: Element;
+    let elementMock: Element;
 
     beforeEach(() => {
       containerMock = document.createElement(`section`);
@@ -41,5 +41,29 @@ describe(`Utils dom should work correctly`, () => {
       unmount(unmountedElement);
       expect(containerMock.contains(unmountedElement)).toBe(false);
     });
-  })
+
+    it(`Unmount null shouldnt crush`, () => {
+      unmount(null);
+    })
+  });
+
+  describe(`CreateElement should work correctly`, () => {
+    it(`Create element from template`, () => {
+      const templateMock = `<section class="mock-section"><h2 class="mock-header">mock TITLE</h2><p class="mock-description">Lero</p></section>`;
+
+      const elementFromTemplate = createElement(templateMock);
+      expect(elementFromTemplate).not.toBeNull();
+      expect(elementFromTemplate!.tagName).toEqual(`SECTION`);
+      expect(elementFromTemplate!.className).toEqual(`mock-section`);
+      expect(elementFromTemplate!.innerHTML).toEqual(`<h2 class="mock-header">mock TITLE</h2><p class="mock-description">Lero</p>`);
+    });
+
+    it(`invalid template (template === "")`, () => {
+      expect(() => createElement(``)).toThrowError(`Template invalid: cant be empty`);
+    });
+
+    it(`invalid template (template === fragment, template has not base node)`, () => {
+      expect(() => createElement(`<div></div><div></div>`)).toThrowError(`Template invalid: cant be fragment. Template has not base node`);
+    });
+  });
 });
