@@ -1,12 +1,12 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "./../../tsconfig.json",
   "compilerOptions": {
     "module": "es6",
     "target": "es6",
     "sourceMap": true
   },
   "include": [
-    "./**/*"
+    "./**/*.ts"
   ],
-  "exclude": ["./src/frontend/**/*.test.ts"]
+  "exclude": ["./**/*.test.ts"]
 }
