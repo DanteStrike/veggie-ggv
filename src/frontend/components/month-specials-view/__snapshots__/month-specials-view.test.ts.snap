@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Month specials component should render correctly 1`] = `
+<ul
+  class="month-specials__offers-list"
+>
+  
+                
+  <li
+    class="month-specials__offers-item clearfix"
+  >
+    
+                
+    <div
+      class="month-specials__offer-img"
+    >
+      
+                  
+      <img
+        alt="T1"
+        height="248"
+        src="assets/img/I1"
+        width="248"
+      />
+      
+                
+    </div>
+    
+                
+    <div
+      class="month-specials__offer-wrap"
+    >
+      
+                  
+      <h3
+        class="month-specials__offer-title"
+      >
+        T1
+      </h3>
+      
+                  
+      <p
+        class="month-specials__offer-description"
+      >
+        D1
+      </p>
+      
+                  
+      <span
+        class="month-specials__offer-price"
+      >
+        1$
+      </span>
+      
+                
+    </div>
+    
+              
+  </li>
+  <li
+    class="month-specials__offers-item clearfix"
+  >
+    
+                
+    <div
+      class="month-specials__offer-img"
+    >
+      
+                  
+      <img
+        alt="T2"
+        height="248"
+        src="assets/img/I2"
+        width="248"
+      />
+      
+                
+    </div>
+    
+                
+    <div
+      class="month-specials__offer-wrap"
+    >
+      
+                  
+      <h3
+        class="month-specials__offer-title"
+      >
+        T2
+      </h3>
+      
+                  
+      <p
+        class="month-specials__offer-description"
+      >
+        D2
+      </p>
+      
+                  
+      <span
+        class="month-specials__offer-price"
+      >
+        2$
+      </span>
+      
+                
+    </div>
+    
+              
+  </li>
+  
+            
+</ul>
+`;
