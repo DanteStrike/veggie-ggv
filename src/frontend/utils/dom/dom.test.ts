@@ -4,8 +4,8 @@ import {Position} from "../../enum";
 
 describe(`Utils dom should work correctly`, () => {
   describe(`Render should work correctly`, () => {
-    let containerMock: Element;
-    let elementMock: Element;
+    let containerMock;
+    let elementMock;
 
     beforeEach(() => {
       containerMock = document.createElement(`section`);

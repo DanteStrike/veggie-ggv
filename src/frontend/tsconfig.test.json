@@ -1,0 +1,13 @@
+{
+  "extends": "./../../tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "module": "es6",
+    "target": "es6"
+  },
+  "include": ["./**/*.test.ts"],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
