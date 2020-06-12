@@ -1,0 +1,1713 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Restaurant Menu Offers component should render correctly 1`] = `
+<ul
+  class="offers-menu restaurant-menu__offers-menu restaurant-menu__offers-menu--mod"
+>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 1)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 2)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 3)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 4)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 5)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 6)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 7)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 8)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 9)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 10)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 11)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 12)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 13)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          smoked ricotta terrine (starters 14)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          ricotta, shallots, cheddar, capers
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      12$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 1)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 2)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 3)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 4)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 5)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 6)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 7)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 8)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 9)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          pan fried courgette flowers (main dishes 10)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          courgette flowers, goats cheese, red onion, pine nuts
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      24$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          samphire fritters with fennel ceviche (desserts 1)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          fresh samphire, plain flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      20$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          samphire fritters with fennel ceviche (desserts 2)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          fresh samphire, plain flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      20$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          samphire fritters with fennel ceviche (desserts 3)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          fresh samphire, plain flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      20$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          samphire fritters with fennel ceviche (desserts 4)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          fresh samphire, plain flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      20$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          samphire fritters with fennel ceviche (desserts 5)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          fresh samphire, plain flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      20$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          samphire fritters with fennel ceviche (desserts 6)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          fresh samphire, plain flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      20$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          samphire fritters with fennel ceviche (desserts 7)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          fresh samphire, plain flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      20$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          samphire fritters with fennel ceviche (desserts 8)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          fresh samphire, plain flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      20$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          with fennel ceviche (drinks 1)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      10$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          with fennel ceviche (drinks 2)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      10$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          with fennel ceviche (drinks 3)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      10$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          with fennel ceviche (drinks 4)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      10$
+    </span>
+    
+          
+  </li>
+  
+        
+          
+  <li
+    class="offers-menu__item clearfix"
+  >
+    
+            
+    <div
+      class="offers-menu__wrap"
+    >
+      
+              
+      <p
+        class="offers-menu__offer"
+      >
+        
+                
+        <span
+          class="offers-menu__offer-title"
+        >
+          with fennel ceviche (drinks 5)
+        </span>
+        
+                
+        <span
+          class="offers-menu__offer-products"
+        >
+          flour, cornflower, eggs, fennel
+        </span>
+        
+              
+      </p>
+      
+            
+    </div>
+    
+            
+    <span
+      class="offers-menu__offer-price"
+    >
+      10$
+    </span>
+    
+          
+  </li>
+  
+        
+      
+</ul>
+`;
