@@ -1,3 +1,3 @@
 export interface IMonthSpecialsController {
-  init(): void
+  render(): void
 }
