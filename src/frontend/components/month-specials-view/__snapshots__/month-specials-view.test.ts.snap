@@ -17,9 +17,9 @@ exports[`Month specials component should render correctly 1`] = `
       
                   
       <img
-        alt="T1"
+        alt="Greens fava"
         height="248"
-        src="assets/img/I1"
+        src="assets/img/month-specials-offers-1.jpg"
         width="248"
       />
       
@@ -35,21 +35,21 @@ exports[`Month specials component should render correctly 1`] = `
       <h3
         class="month-specials__offer-title"
       >
-        T1
+        Greens fava
       </h3>
       
                   
       <p
         class="month-specials__offer-description"
       >
-        D1
+        Lorem ipsum
       </p>
       
                   
       <span
         class="month-specials__offer-price"
       >
-        1$
+        10$
       </span>
       
                 
@@ -68,9 +68,9 @@ exports[`Month specials component should render correctly 1`] = `
       
                   
       <img
-        alt="T2"
+        alt="Celery quandong"
         height="248"
-        src="assets/img/I2"
+        src="assets/img/month-specials-offers-2.jpg"
         width="248"
       />
       
@@ -86,21 +86,225 @@ exports[`Month specials component should render correctly 1`] = `
       <h3
         class="month-specials__offer-title"
       >
-        T2
+        Celery quandong
       </h3>
       
                   
       <p
         class="month-specials__offer-description"
       >
-        D2
+        Lorem ipsum dolor sit
       </p>
       
                   
       <span
         class="month-specials__offer-price"
       >
-        2$
+        20$
+      </span>
+      
+                
+    </div>
+    
+              
+  </li>
+  <li
+    class="month-specials__offers-item clearfix"
+  >
+    
+                
+    <div
+      class="month-specials__offer-img"
+    >
+      
+                  
+      <img
+        alt="Pea horseradish"
+        height="248"
+        src="assets/img/month-specials-offers-3.jpg"
+        width="248"
+      />
+      
+                
+    </div>
+    
+                
+    <div
+      class="month-specials__offer-wrap"
+    >
+      
+                  
+      <h3
+        class="month-specials__offer-title"
+      >
+        Pea horseradish
+      </h3>
+      
+                  
+      <p
+        class="month-specials__offer-description"
+      >
+        Lorem ipsum dolor sit Pellentesque
+      </p>
+      
+                  
+      <span
+        class="month-specials__offer-price"
+      >
+        30$
+      </span>
+      
+                
+    </div>
+    
+              
+  </li>
+  <li
+    class="month-specials__offers-item clearfix"
+  >
+    
+                
+    <div
+      class="month-specials__offer-img"
+    >
+      
+                  
+      <img
+        alt="Soko radicchio"
+        height="248"
+        src="assets/img/month-specials-offers-4.jpg"
+        width="248"
+      />
+      
+                
+    </div>
+    
+                
+    <div
+      class="month-specials__offer-wrap"
+    >
+      
+                  
+      <h3
+        class="month-specials__offer-title"
+      >
+        Soko radicchio
+      </h3>
+      
+                  
+      <p
+        class="month-specials__offer-description"
+      >
+        Lorem ipsum dolor sit Pellentesque vel enim a
+      </p>
+      
+                  
+      <span
+        class="month-specials__offer-price"
+      >
+        40$
+      </span>
+      
+                
+    </div>
+    
+              
+  </li>
+  <li
+    class="month-specials__offers-item clearfix"
+  >
+    
+                
+    <div
+      class="month-specials__offer-img"
+    >
+      
+                  
+      <img
+        alt="Tigernut"
+        height="248"
+        src="assets/img/month-specials-offers-5.jpg"
+        width="248"
+      />
+      
+                
+    </div>
+    
+                
+    <div
+      class="month-specials__offer-wrap"
+    >
+      
+                  
+      <h3
+        class="month-specials__offer-title"
+      >
+        Tigernut
+      </h3>
+      
+                  
+      <p
+        class="month-specials__offer-description"
+      >
+        Pellentesque vel enim a
+      </p>
+      
+                  
+      <span
+        class="month-specials__offer-price"
+      >
+        50$
+      </span>
+      
+                
+    </div>
+    
+              
+  </li>
+  <li
+    class="month-specials__offers-item clearfix"
+  >
+    
+                
+    <div
+      class="month-specials__offer-img"
+    >
+      
+                  
+      <img
+        alt="Yarrow sweet"
+        height="248"
+        src="assets/img/month-specials-offers-6.jpg"
+        width="248"
+      />
+      
+                
+    </div>
+    
+                
+    <div
+      class="month-specials__offer-wrap"
+    >
+      
+                  
+      <h3
+        class="month-specials__offer-title"
+      >
+        Yarrow sweet
+      </h3>
+      
+                  
+      <p
+        class="month-specials__offer-description"
+      >
+        Lorem vel enim a
+      </p>
+      
+                  
+      <span
+        class="month-specials__offer-price"
+      >
+        60$
       </span>
       
                 
