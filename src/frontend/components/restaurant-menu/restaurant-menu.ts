@@ -3,15 +3,19 @@ import {IRestaurantMenu} from "../../types";
 import {querySelectorSafe} from "../../utils";
 
 class RestaurantMenu extends AbstractComponent implements IRestaurantMenu {
-  private readonly navigationContainer: Element;
-  private readonly offersContainer: Element;
+  private readonly navigationContainer: HTMLElement;
+  private readonly offersContainer: HTMLElement;
+  private onHideOffersTransitioned: () => void = () => {};
+  private onShowOffersTransitioned: () => void = () => {};
 
   constructor(
   ) {
     super();
 
-    this.navigationContainer = querySelectorSafe(this.getElement(), `.nav`);
-    this.offersContainer = querySelectorSafe(this.getElement(), `.restaurant-menu__offers`);
+    this.navigationContainer = querySelectorSafe(this.getElement(), `.nav`) as HTMLElement;
+    this.offersContainer = querySelectorSafe(this.getElement(), `.restaurant-menu__offers`) as HTMLElement;
+
+    this.initHandlers();
   }
 
   getNavigationContainer(): Element {
@@ -20,6 +24,30 @@ class RestaurantMenu extends AbstractComponent implements IRestaurantMenu {
 
   getOffersContainer(): Element {
     return this.offersContainer;
+  }
+
+  private initHandlers(): void {
+    this.offersContainer.addEventListener(`transitionend`, () => this.onOffersTransitionEnd())
+  }
+
+  public hideOffers(cb: () => void = () => {}): void {
+    this.offersContainer.style.opacity = `0`;
+    this.onHideOffersTransitioned = cb;
+  }
+
+  public showOffers(cb: () => void = () => {}): void {
+    this.offersContainer.style.opacity = `1`;
+    this.onShowOffersTransitioned = cb;
+  }
+
+  private onOffersTransitionEnd(): void {
+    if (this.offersContainer.style.opacity === `0`) {
+      this.onHideOffersTransitioned();
+    }
+
+    if (this.offersContainer.style.opacity === `1`) {
+      this.onShowOffersTransitioned();
+    }
   }
 
   protected getTemplate(): string {

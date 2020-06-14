@@ -14,6 +14,8 @@ const restaurantMenuContainer = querySelectorSafe(document, `.restaurant-menu`);
 const restaurantMenuController = new RestaurantMenuController(restaurantMenuContainer, restaurantMenuOffersMock);
 restaurantMenuController.init();
 
-AOS.init();
+AOS.init({
+  offset: -10
+});
 
 

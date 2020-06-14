@@ -32,8 +32,7 @@ class RestaurantMenuController implements IRestaurantMenuController{
   init(): void {
     render(this.container, this.menuView.getElement(), Position.BEFOREEND);
     render(this.menuView.getNavigationContainer(), this.navigationView.getElement(), Position.AFTERBEGIN);
-    render(this.menuView.getOffersContainer(), this.leftOffersView.getElement(), Position.AFTERBEGIN);
-    render(this.menuView.getOffersContainer(), this.rightOffersView.getElement(), Position.BEFOREEND);
+    this.renderNewOffers();
   }
 
   private separateOffersByColumns(): void {
@@ -56,12 +55,25 @@ class RestaurantMenuController implements IRestaurantMenuController{
     this.rightOffersView = new RestaurantMenuOffers(rightColumnOffers, `right`);
   }
 
+  private updateOffersWithAnimation(): void {
+    this.menuView.hideOffers(() => {
+      this.updateOffers();
+      this.menuView.showOffers();
+    });
+  }
+
   private updateOffers(): void {
+    this.removeOldOffers();
+    this.separateOffersByColumns();
+    this.renderNewOffers();
+  }
+
+  private removeOldOffers(): void {
     this.leftOffersView.removeElement();
     this.rightOffersView.removeElement();
+  }
 
-    this.separateOffersByColumns();
-
+  private renderNewOffers(): void {
     render(this.menuView.getOffersContainer(), this.leftOffersView.getElement(), Position.AFTERBEGIN);
     render(this.menuView.getOffersContainer(), this.rightOffersView.getElement(), Position.BEFOREEND);
   }
@@ -92,7 +104,7 @@ class RestaurantMenuController implements IRestaurantMenuController{
 
   private onFilterChange(newFilter: RestaurantMenuOffersGroup): void {
     this.currentFilter = newFilter;
-    this.updateOffers();
+    this.updateOffersWithAnimation();
   }
 }
 
