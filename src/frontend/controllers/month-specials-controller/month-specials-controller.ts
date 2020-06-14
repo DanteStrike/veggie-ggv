@@ -9,7 +9,7 @@ class MonthSpecialsController implements IMonthSpecialsController {
     private readonly monthSpecials: MonthSpecialType[]
   ) {}
 
-  render(): void {
+  init(): void {
     render(this.container, new MonthSpecialsView(this.monthSpecials).getElement(), Position.BEFOREEND)
   }
 }

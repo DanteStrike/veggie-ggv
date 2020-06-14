@@ -1,4 +1,4 @@
-import {createElement, render, unmount} from "./dom";
+import {createElement, querySelectorSafe, render, unmount} from "./dom";
 import {Position} from "../../enum";
 
 
@@ -64,6 +64,23 @@ describe(`Utils dom should work correctly`, () => {
 
     it(`invalid template (template === fragment, template has not base node)`, () => {
       expect(() => createElement(`<div></div><div></div>`)).toThrowError(`Template invalid: cant be fragment. Template has not base node`);
+    });
+  });
+
+  describe(`querySelectorSafe should work correctly`, () => {
+    const mockContainer = document.createElement(`section`);
+    const mockElementOne = document.createElement(`div`);
+    const mockElementTwo = document.createElement(`p`);
+    mockContainer.append(mockElementOne);
+    mockContainer.append(mockElementTwo);
+
+    it(`QS with not a null check`, () => {
+      expect(querySelectorSafe(mockContainer, `div`)).toEqual(mockElementOne);
+      expect(querySelectorSafe(mockContainer, `p`)).toEqual(mockElementTwo);
+    });
+
+    it(`Null situation`, () => {
+      expect(() => querySelectorSafe(mockContainer, `null`)).toThrowError(`Error: querySelector cant find element`);
     });
   });
 });

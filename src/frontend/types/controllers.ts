@@ -1,7 +1,8 @@
 export interface IMonthSpecialsController {
-  render(): void
+  init(): void
 }
 
 export interface IRestaurantMenuController {
-  render(): void
+  init(): void
 }
+

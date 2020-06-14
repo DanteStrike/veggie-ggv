@@ -19,7 +19,7 @@ describe(`Month specials controller should work correctly`, () => {
       price: 2
     }];
     const monthSpecialsController = new MonthSpecialsController(container, monthSpecialsMock);
-    monthSpecialsController.render();
+    monthSpecialsController.init();
 
     expect(container.children[0]).toEqual(header);
     expect(container.children[1]).not.toBeNull();

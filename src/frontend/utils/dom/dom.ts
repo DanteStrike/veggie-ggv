@@ -34,3 +34,13 @@ export const createElement = (template: string): Element => {
 
   return newElementContainer.firstElementChild!;
 };
+
+export const querySelectorSafe = (node: ParentNode, selector: string): Element => {
+  const foundedElement = node.querySelector(selector);
+
+  if (!foundedElement) {
+    throw new Error(`Error: querySelector cant find element`);
+  }
+
+  return foundedElement;
+};

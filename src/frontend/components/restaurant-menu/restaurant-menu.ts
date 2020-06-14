@@ -1,18 +1,25 @@
 import AbstractComponent from "../abstract-component/abstract-component";
 import {IRestaurantMenu} from "../../types";
+import {querySelectorSafe} from "../../utils";
 
 class RestaurantMenu extends AbstractComponent implements IRestaurantMenu {
+  private readonly navigationContainer: Element;
+  private readonly offersContainer: Element;
+
   constructor(
   ) {
     super();
+
+    this.navigationContainer = querySelectorSafe(this.getElement(), `.nav`);
+    this.offersContainer = querySelectorSafe(this.getElement(), `.restaurant-menu__offers`);
   }
 
   getNavigationContainer(): Element {
-    return this.getElement().querySelector(`.nav`)!;
+    return this.navigationContainer;
   }
 
   getOffersContainer(): Element {
-    return this.getElement().querySelector(`.restaurant-menu__offers`)!;
+    return this.offersContainer;
   }
 
   protected getTemplate(): string {

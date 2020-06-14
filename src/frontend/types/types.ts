@@ -14,3 +14,11 @@ export type RestaurantMenuOfferType = {
   products: string[];
   price: number
 }
+
+interface IRestaurantMenuButtonDataset extends DOMStringMap {
+  group: RestaurantMenuOffersGroup;
+}
+
+export interface IRestaurantMenuButton extends HTMLButtonElement {
+  dataset: IRestaurantMenuButtonDataset
+}

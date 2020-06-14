@@ -13,7 +13,7 @@ exports[`Restaurant Menu Navigation component should render correctly 1`] = `
           
     <button
       class="button restaurant-menu__button nav__link nav__link--current"
-      data-id="starters"
+      data-group="starters"
     >
       Starters
     </button>
@@ -29,7 +29,7 @@ exports[`Restaurant Menu Navigation component should render correctly 1`] = `
           
     <button
       class="button restaurant-menu__button nav__link"
-      data-id="mainDishes"
+      data-group="main-dishes"
     >
       Main Dishes
     </button>
@@ -45,7 +45,7 @@ exports[`Restaurant Menu Navigation component should render correctly 1`] = `
           
     <button
       class="button restaurant-menu__button nav__link"
-      data-id="desserts"
+      data-group="desserts"
     >
       Desserts
     </button>
@@ -61,7 +61,7 @@ exports[`Restaurant Menu Navigation component should render correctly 1`] = `
           
     <button
       class="button restaurant-menu__button nav__link"
-      data-id="drinks"
+      data-group="drinks"
     >
       Drinks
     </button>
