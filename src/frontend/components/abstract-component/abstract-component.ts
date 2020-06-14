@@ -1,4 +1,4 @@
-import {createElement} from '../../utils';
+import {createElement, unmount} from '../../utils';
 import {IAbstractComponent} from "../../types";
 
 abstract class AbstractComponent implements IAbstractComponent {
@@ -17,6 +17,7 @@ abstract class AbstractComponent implements IAbstractComponent {
   }
 
   removeElement() {
+    unmount(this.element);
     this.element = null;
   }
 
