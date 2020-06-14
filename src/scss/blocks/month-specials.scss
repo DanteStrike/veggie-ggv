@@ -198,17 +198,17 @@ $monthSpecialHeight: 248px;
     padding: 0 5px;
   }
 
-  .month-specials__offer-img {
+  .month-specials__offers-item:nth-child(n) .month-specials__offer-img {
     float: none;
     margin: 0 auto;
   }
 
-  .month-specials__offer-wrap {
+  .month-specials__offers-item:nth-child(n) .month-specials__offer-wrap {
     float: none;
     margin: 0 auto;
   }
 
-  .month-specials__offers-item--reverse {
+  .month-specials__offers-item:nth-child(n) .month-specials__offers-item--reverse {
     & .month-specials__offer-img {
       float: none;
       margin: 0 auto;
